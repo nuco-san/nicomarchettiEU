@@ -1,6 +1,7 @@
 body {
-	padding: 2rem;
 	background-color: #FAF6E7;
+	margin: 0px;
+	overscroll-behavior: none;
 }
 
 a {
@@ -13,10 +14,10 @@ p {
 }
 
 ::selection {
-	background: #ee5a7a; /* WebKit/Blink Browsers */
+	background: white; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-	background: #ee5a7a; /* Gecko Browsers */
+	background: white; /* Gecko Browsers */
   }
 
 
@@ -60,8 +61,10 @@ p {
 
 #head {
 	padding: 0rem 6rem;
+	top: 0;
+	position: fixed;
+	overflow: hidden;
 }
-
 
 #head-sx {
 	width: 40%;
@@ -88,6 +91,7 @@ p {
 #head-sotto {
 	width: 100%;
 	padding: 5rem 0 0 0;
+	
 }
 
 #head-sotto-sx {
@@ -127,8 +131,8 @@ p {
 
 
 #contenitore-immagini {
-	padding: 0rem 6rem;
-	text-align: left;
+	padding: 3rem 6rem;
+	text-align: center;
 }
 
 
@@ -138,31 +142,45 @@ p {
 }
 
 .immagini-1 {
-		width: 75%;
+	width: 90%;
 }
 
 .immagini-2 {
-		width: 47%;
+		width: 45%;
 }
 
 .immagini-3 {
-	width: 20%;
+	width: 30%;
 }
 
 
 .testo-tra-immagini {
-	text-align: left;
-	width: 15%;
-	display: inline-block;
-	margin-left: 1rem;
-	height: 100%;
+	text-align: center;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 	vertical-align: top;
-	padding-top: 1.5rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+
+.icona-testo-full-width {
+	height: 10rem;
+	display: inline;
+	float: left;
+}
+
+.testo-full-width {
+	display: block;
+	width: 55%;
+	padding: 4rem 0 4rem 0;
+	height: 10rem;
 }
 
 
 #footer {
-	padding: 4rem 6rem;
+	padding: 3rem 3rem;
 	text-align: center;
 }
 
@@ -181,7 +199,25 @@ p {
 	font-size: 4rem;
 	line-height: 4rem;
 	margin: 0;
-	color: black;;
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.testo-gigante-shrink {
+	font-family: Karla_Regular;
+	font-size: 1.3rem;
+	line-height: 2rem;
+
+	width: 500px; 
+	position: absolute;
+	top: 0px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	text-decoration: none;
+	text-align: center;
 }
 
 
@@ -215,8 +251,8 @@ p {
 .testo-serif-medio {
 	color: black;
 	font-family: Cormorant-light;
-	font-size: 2.3rem;
-	line-height: 1.2rem;
+	font-size: 3.2rem;
+	line-height: 2rem;
 }
 
 #disciplina {
@@ -240,10 +276,9 @@ p {
 }
 
 .video {
-	width:75%;
-	height: 600px;
+	width:90%;
+	height: 764px;
 	margin-bottom: 2rem;
-	display: inline-block;
 }
 
 .mobile-show {
@@ -305,12 +340,19 @@ p {
 
 
 .pistachio {
+	font-family: Karla_Regular;
+	color: white;
+}
+
+.pistachio-onwhite {
 	font-family: Karla_Bold;
 	color: black;
-	background-color: #e6be50;
+	text-decoration: underline;
 }
+
 .pistachio:hover {
-	background-color: #ee5a7a;
+	background-color: white;
+	color: black;
 }
 
 .topistachio:hover {
@@ -320,12 +362,15 @@ p {
 
 .back-svg {
 	width: 70px;
-	fill: #ee5a7a;
+	fill: white;
 }
 
-.back-svg:hover {
-	fill: #e6be50;
+.back-svg-shrink {
+	width: 30px;
+	position: absolute;
+	top: 5px;
 }
+
 
 
 
@@ -360,21 +405,17 @@ p {
 		width: 90%;
 	}
 	
-	#contenitore-immagini {
-		padding: 0rem 0rem;
-	}
-	
 	#disciplina {
 		margin: 0 4rem 0 0;
 	}
 	
 	.video {
 		height: 600px;
-		width: 75%;
+		width: 90%;
 	}
 	
 	.testo-tra-immagini {
-		width: 20%;
+		width: 55%;
 	}
 
 	.immagine-titolo {
@@ -384,11 +425,38 @@ p {
 
 
 @media screen and (max-width: 1000px) {
-	
-	#head {
-		padding: 2rem 0rem;
+
+	#head-sx-luna {
+		margin-top: 2rem;
+	}
+
+
+	#head-sx {
+		width: 55%;
+	}
+
+	#head-sotto-sx {
+		width: 55%;
 	}
 	
+	#head-dx {
+		width: 40%;
+	}
+
+	#head-sotto-dx {
+		width: 40%;
+	}
+
+	#head-sotto-dx-team {
+		width: 50%;
+		margin-left: 0;
+	}
+
+	#contenitore-immagini {
+		padding: 3rem;
+	}
+
+
 	.immagini-progetto {
 		margin: 0.6rem 0rem; 
 	}
@@ -406,7 +474,7 @@ p {
 	}
 	
 	.video {
-		height: 500px;
+		height: 450px;
 		width: 100%;
 	}
 
@@ -437,7 +505,6 @@ p {
 	}
 	#head-dx {
 		width: 100%;
-		padding-top: 3rem;
 	}
 	
 	#head-sotto {
@@ -459,13 +526,9 @@ p {
 	.video {
 		height: 400px;
 	}
-	
-	body {
-		padding: 1rem;
-	}
 
 	.immagine-titolo {
-		width: 70%;
+		width: 50%;
 	}
 
 	.mobile-show {
@@ -474,10 +537,20 @@ p {
 	.mobile-hide {
 		display: none;
 	}
+
+	.testo-gigante-shrink {
+		font-size: 1.5rem;
+		line-height: 2.3rem;
+	}
 	
 }
 
 @media screen and (max-width: 650px) {
+
+	#head{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 	
 	#home-sopra {
 		text-align: center;
@@ -499,11 +572,22 @@ p {
 		width: 100%;
 	}
 
+	#contenitore-immagini {
+		padding: 1rem;
+	}
+
 	.back-svg {
 		position: absolute;
 		top: 40px;
 		left: 40px;
 		width: 55px;
+	}
+
+
+	.back-svg-shrink {
+		width: 30px;
+		position: absolute;
+		top: 5px;
 	}
 	
 	#disciplina {
@@ -532,6 +616,7 @@ p {
 	.testo-gigante {
 		font-size: 3rem;
 		line-height: 3.8rem;
+		margin-top: 6rem;
 	}
 	
 	
@@ -565,14 +650,14 @@ p {
 	}
 	
 	.video {
-		height: 250px;
-	}
-	
-	
-	body {
-		padding: 0.5rem;
+		height: 300px;
 	}
 
+	.testo-gigante-shrink {
+		font-size: 1.5rem;
+		line-height: 2.3rem;
+		margin: 0;
+	}
 }
 
 
