@@ -573,14 +573,14 @@ p {
 	}
 
 	#contenitore-immagini {
-		padding: 1rem;
+		padding: 0;
 	}
 
 	.back-svg {
 		position: absolute;
-		top: 40px;
-		left: 40px;
-		width: 55px;
+		top: 30px;
+		left: 30px;
+		width: 35px;
 	}
 
 
@@ -592,9 +592,9 @@ p {
 	
 	#disciplina {
 		position: absolute;
-		top: 50px;
-		right: 40px;
-		font-size: 1.2rem;
+		top: 40px;
+		right: 30px;
+		font-size: 1rem;
 	}
 
 	#head-sotto {
@@ -616,7 +616,7 @@ p {
 	.testo-gigante {
 		font-size: 3rem;
 		line-height: 3.8rem;
-		margin-top: 6rem;
+		margin-top: 4rem;
 	}
 	
 	
@@ -657,6 +657,10 @@ p {
 		font-size: 1.5rem;
 		line-height: 2.3rem;
 		margin: 0;
+	}
+
+	.immagine-titolo {
+		display: none;
 	}
 }
 
