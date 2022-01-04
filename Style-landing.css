@@ -252,23 +252,22 @@ body {
 	font-family: Karla_Bold;
 	font-size: 1.2rem;
 	line-height: 1.2rem;
-	color: #FAF6E7;
+	color: black;
 	margin:0;
 	padding: 0;
 	text-align: center;
-	display: none;
 }
 
 .mobile-pres-container {
 	position: absolute;
 	left: 50%;
-    bottom: 0;
-    transform: translate(-50%,0);
-	width: 50%;
-	padding: 0.3rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	width: 40%;
+	padding: 0.8rem;
 	background-color: #ee5a7a;
 	z-index: 100;
-
+	display: none;
 }
 
 .link-home-genre {
@@ -638,7 +637,7 @@ body {
 	
 	.link-home {
 		width: 80%;
-		height: 30rem;
+		height: 14rem;
 	}
 
 	.nico-descrizione {
@@ -647,15 +646,10 @@ body {
 	}
 
 	.nico {
-		font-size: 3rem;
+		font-size: 4rem;
 		margin: 50px 0 30px 0;
-		line-height: 3.3rem;
+		line-height: 3.5rem;
 	}
-
-	.link-home {
-		height: 12rem;
-	}
-
 	.back-svg {
 		position: absolute;
 		top: 40px;
@@ -667,6 +661,14 @@ body {
 		width: 4rem;
 		right: 3rem;
 		top: 3rem;
+	}
+
+	.mobile-pres-container {
+		display: block;
+	}
+
+	#home-sopra-dx {
+		margin: 0 ;
 	}
 
 }
