@@ -365,7 +365,6 @@ p {
     image-rendering: -webkit-optimize-contrast;
     -ms-interpolation-mode: nearest-neighbor;
     image-rendering: pixelated;
-	box-shadow: 5px 8px 8px #0004;
 }
 
 .back-svg:hover {
