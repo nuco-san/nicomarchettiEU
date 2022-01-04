@@ -124,9 +124,11 @@ body {
 
 .home-sopra-navigation {
 	font-family: Karla_Bold;
-	font-size: 1.6rem;
-	line-height: 1.2rem;
+	font-size: 1.4rem;
+	line-height: 1rem;
 	color: black;
+	display: inline-block;
+	margin-left: 2rem;
 }
 
 .home-sopra-navigation:hover {
@@ -366,14 +368,15 @@ body {
 
 .career-mail {
 	color: black;
+	font-size: 1.2rem;
 	font-family: Karla_Bold;
 	cursor: pointer;
-	background-color: #e6be50;
+	background-color: #ee5a7a;
 	white-space: nowrap;
 }
 
 .career-mail:hover {
-	background-color: #ee5a7a;
+	color: white;
 }
 
 
@@ -430,6 +433,22 @@ body {
     -ms-interpolation-mode: nearest-neighbor;  
 }
 
+
+#icona-home {
+
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor; 
+
+	position: absolute;
+	top: 6rem;
+	right: 6rem;
+	width: 6rem;
+}
 
 
 
