@@ -255,19 +255,17 @@ body {
 	color: black;
 	margin:0;
 	padding: 0;
-	text-align: center;
 }
 
 .mobile-pres-container {
 	position: absolute;
-	left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-	width: 40%;
-	padding: 0.8rem;
+	right: 0;
+    bottom: 0;
+	padding: 0.4rem;
 	background-color: #e6be50;
 	z-index: 100;
 	display: none;
+	text-align: right;
 }
 
 .link-home-genre {
