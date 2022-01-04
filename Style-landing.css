@@ -11,6 +11,10 @@ body {
 	color:#ee5a7a;
 }
 
+.bold {
+	font-family: Karla_Bold;
+}
+
 @font-face {
     font-family: HappyTimes_italic;
     src: url(happy-times-italic.otf);
