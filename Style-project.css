@@ -1,7 +1,5 @@
 body {
-	background-color: #FAF6E7;
 	margin: 0px;
-	overscroll-behavior: none;
 }
 
 a {
@@ -59,18 +57,26 @@ p {
 
 
 
+
+
+
+
 #head {
-	padding: 0rem 6rem;
+	width: 80%;
+	left:0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
 	top: 0;
 	position: fixed;
-	overflow: hidden;
+	z-index: -10;
 }
 
 #head-sx {
-	width: 40%;
+	width: 50%;
 	display: inline-block;
 	vertical-align: bottom;
-	margin-right: 5vw;
 }
 
 #head-sx-home {
@@ -95,13 +101,13 @@ p {
 }
 
 #head-sotto-sx {
-	width: 45%;
+	width: 50%;
 	display: inline-block;
 	vertical-align: top;
 }
 
 #head-sotto-sx-testo {
-	width: 80%;
+	width: 90%;
 }
 
 #head-sotto-dx {
@@ -113,14 +119,13 @@ p {
 #head-sotto-dx-team {
 	display: inline-block;
 	width: 40%;
-	margin-left: 3rem
 }
 
 #head-sotto-dx-year {
 	display: inline-block;
 	width: 40%;
 	vertical-align: top;
-	margin-left: 3rem
+	margin-left: 3rem;
 }
 
 
@@ -131,8 +136,11 @@ p {
 
 
 #contenitore-immagini {
-	padding: 3rem 6rem;
+	padding: 3rem 0rem;
 	text-align: center;
+	z-index: 10;
+	background-color: #FAF6E7;
+	box-shadow: 5px 0px 30px #0006;
 }
 
 
@@ -142,7 +150,7 @@ p {
 }
 
 .immagini-1 {
-	width: 90%;
+	width: 80%;
 }
 
 .immagini-2 {
@@ -180,7 +188,10 @@ p {
 
 
 #footer {
-	padding: 3rem 3rem;
+	padding: 1.5rem 0 3rem 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
@@ -202,22 +213,6 @@ p {
 	color: black;
 	text-decoration: underline;
 	text-decoration-color: black;
-}
-
-.testo-gigante-shrink {
-	font-family: Karla_Regular;
-	font-size: 1.3rem;
-	line-height: 2rem;
-
-	width: 500px; 
-	position: absolute;
-	top: 0px;
-	left: 0; 
-	right: 0; 
-	margin-left: auto; 
-	margin-right: auto; 
-	text-decoration: none;
-	text-align: center;
 }
 
 
@@ -268,7 +263,7 @@ p {
 }
 
 .immagine-titolo {
-	width: 60%;
+	height: 11rem;
 }
 
 .pallino {
@@ -276,7 +271,7 @@ p {
 }
 
 .video {
-	width:90%;
+	width:80%;
 	height: 764px;
 	margin-bottom: 2rem;
 }
@@ -362,13 +357,17 @@ p {
 
 .back-svg {
 	width: 70px;
-	fill: white;
+
+	image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+	box-shadow: 5px 8px 8px #0003;
 }
 
-.back-svg-shrink {
-	width: 30px;
-	position: absolute;
-	top: 5px;
+.back-svg:hover {
+	box-shadow: 5px 8px 8px #0006;
 }
 
 
@@ -376,25 +375,22 @@ p {
 
 
 @media screen and (max-width: 1400px) {
+
 	#head {
-		padding: 0rem 3rem;
+		width: 90%;
 	}
 	
 	#head-sx {
-		width: 45%;
+		width: 50%;
 		margin-right: 0vw;
 	}
 	#head-dx {
-		width: 50%;
+		width: 45%;
 		margin-right: 0vw;
 	}
 	
 	#head-sotto-dx {
 		width: 45%;
-	}
-	
-	#head-sotto-dx-team {
-		margin-left: 1rem;
 	}
 
 	#head-sotto-dx-year {
@@ -419,7 +415,7 @@ p {
 	}
 
 	.immagine-titolo {
-		width: 80%
+		height: 9rem;
 	}
 }
 
@@ -433,6 +429,10 @@ p {
 
 	#head-sx {
 		width: 55%;
+	}
+
+	#head-sotto {
+		padding-top: 3rem;
 	}
 
 	#head-sotto-sx {
@@ -452,21 +452,17 @@ p {
 		margin-left: 0;
 	}
 
-	#contenitore-immagini {
-		padding: 3rem;
-	}
-
 
 	.immagini-progetto {
 		margin: 0.6rem 0rem; 
 	}
 
 	.immagini-1 {
-			width: 100%;
+			width: 90%;
 	}
 
 	.immagini-2 {
-			width: 49%;
+			width: 45%;
 	}
 	
 	#disciplina {
@@ -475,7 +471,7 @@ p {
 	
 	.video {
 		height: 450px;
-		width: 100%;
+		width: 90%;
 	}
 
 	.testo-tra-immagini {
@@ -506,18 +502,12 @@ p {
 	#head-dx {
 		width: 100%;
 	}
-	
+
 	#head-sotto {
-		padding: 3rem 0 0 0;
-	}
-	
-	.immagini-1 {
-			width: 100%;
+		padding-top: 2rem;
 	}
 
-	.immagini-2 {
-			width: 100%;
-	}
+
 	
 	#disciplina {
 		margin: 0;
@@ -527,10 +517,6 @@ p {
 		height: 400px;
 	}
 
-	.immagine-titolo {
-		width: 50%;
-	}
-
 	.mobile-show {
 		display: block;
 	}
@@ -538,19 +524,11 @@ p {
 		display: none;
 	}
 
-	.testo-gigante-shrink {
-		font-size: 1.5rem;
-		line-height: 2.3rem;
-	}
 	
 }
 
 @media screen and (max-width: 650px) {
 
-	#head{
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
 	
 	#home-sopra {
 		text-align: center;
@@ -578,22 +556,15 @@ p {
 
 	.back-svg {
 		position: absolute;
-		top: 30px;
-		left: 30px;
-		width: 35px;
+		top: 20px;
+		left: 0px;
+		width: 60px;
 	}
 
-
-	.back-svg-shrink {
-		width: 30px;
-		position: absolute;
-		top: 5px;
-	}
-	
 	#disciplina {
 		position: absolute;
 		top: 40px;
-		right: 30px;
+		right: 10px;
 		font-size: 1rem;
 	}
 
@@ -605,6 +576,10 @@ p {
 	#head-sotto-sx {
 		width: 90%;
 	}
+
+	#head-sotto-dx {
+		display: none;
+	}
 	
 	#head-sotto-sx-testo {
 		width: 100%;
@@ -615,15 +590,15 @@ p {
 	}
 	
 	.testo-gigante {
-		font-size: 2.2rem;
+		font-size: 2.4rem;
 		line-height: 3rem;
-		margin-top: 4rem;
+		margin-top: 7rem;
 	}
 	
 	
 	.testo-serif-piccolo {
-		font-size: 1.2rem;
-		line-height: 1.3rem;
+		font-size: 1.4rem;
+		line-height: 1.5rem;
 	}
 	
 	#head-sotto-sx {
@@ -652,12 +627,6 @@ p {
 	
 	.video {
 		height: 300px;
-	}
-
-	.testo-gigante-shrink {
-		font-size: 1.5rem;
-		line-height: 2.3rem;
-		margin: 0;
 	}
 
 	.immagine-titolo {
