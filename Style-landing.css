@@ -265,7 +265,7 @@ body {
     transform: translate(-50%,-50%);
 	width: 40%;
 	padding: 0.8rem;
-	background-color: #ee5a7a;
+	background-color: #e6be50;
 	z-index: 100;
 	display: none;
 }
@@ -648,7 +648,7 @@ body {
 	.nico {
 		font-size: 3rem;
 		margin: 50px 0 30px 0;
-		line-height: 3.3rem;
+		line-height: 3.1rem;
 	}
 	.back-svg {
 		position: absolute;
@@ -669,6 +669,10 @@ body {
 
 	#home-sopra-dx {
 		margin: 0 ;
+	}
+
+	#home-sotto {
+		padding-top: 1rem;
 	}
 
 }
