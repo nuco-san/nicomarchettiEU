@@ -637,7 +637,7 @@ body {
 	
 	.link-home {
 		width: 80%;
-		height: 14rem;
+		height: 12rem;
 	}
 
 	.nico-descrizione {
@@ -646,9 +646,9 @@ body {
 	}
 
 	.nico {
-		font-size: 4rem;
+		font-size: 3rem;
 		margin: 50px 0 30px 0;
-		line-height: 3.5rem;
+		line-height: 3.3rem;
 	}
 	.back-svg {
 		position: absolute;
@@ -658,9 +658,9 @@ body {
 	}
 
 	#icona-home {
-		width: 4rem;
-		right: 3rem;
-		top: 3rem;
+		width: 3.3rem;
+		right: 2rem;
+		top: 2rem;
 	}
 
 	.mobile-pres-container {
