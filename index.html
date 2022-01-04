@@ -205,8 +205,8 @@
 
 		$('.link-home').mouseenter( function(){
 			$(this).children('img').eq(0).css('opacity', '0');
+			$(this).children('p').eq(0).css('opacity', '1');
 			$(this).children('p').eq(1).css('opacity', '1');
-			$(this).children('p').eq(2).css('opacity', '1');
 			$(this).css( "box-sizing", "border-box");
 			$(this).css('border-width', '6px');
 			$(this).css('border-style', 'solid');
@@ -215,8 +215,8 @@
 
 		$('.link-home').mouseleave( function(){
 			$(this).children('img').eq(0).css('opacity', '1');
+			$(this).children('p').eq(0).css('opacity', '0');
 			$(this).children('p').eq(1).css('opacity', '0');
-			$(this).children('p').eq(2).css('opacity', '0');
 			$(this).css('border-width', '0px');
 			$(this).css('box-shadow', '0px 0px 0px #0000');
 		});
