@@ -371,36 +371,6 @@ p {
 	box-shadow: 5px 8px 8px #0006;
 }
 
-#show-text-button {
-	font-family: Karla_Bold;
-	font-size: 1.1rem;
-
-	position: absolute;
-	bottom: 3rem;
-	left: 0;
-	width: 100%;
-
-	text-align: center;
-	color: white;
-	z-index: 12;
-
-	display: none;
-}
-
-#show-text-button:hover {
-	cursor: pointer;
-}
-
-#text-hide-gradient {
-	position: absolute;
-	height: 140px;
-	width: 100%;
-	bottom: 2rem;
-	left: 0;
-	z-index: 10;
-	background-image: linear-gradient(#0000, #0000);
-}
-
 
 
 
@@ -628,7 +598,7 @@ p {
 	.testo-gigante {
 		font-size: 2.4rem;
 		line-height: 3rem;
-		margin-top: 7rem;
+		margin-top: 1rem;
 	}
 	
 	
@@ -672,6 +642,12 @@ p {
 	.testo-tra-immagini {
 		padding: 0;
 	}
+
+	#head-sx-luna {
+		display: none;
+	}
+
+
 
 
 }
