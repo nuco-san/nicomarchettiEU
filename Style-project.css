@@ -371,6 +371,35 @@ p {
 	box-shadow: 5px 8px 8px #0006;
 }
 
+#show-text-button {
+	font-family: Karla_Bold;
+	font-size: 1.1rem;
+
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 100%;
+
+	text-align: center;
+	color: white;
+	z-index: 12;
+
+	display: none;
+}
+
+#show-text-button:hover {
+	cursor: pointer;
+}
+
+#text-hide-gradient {
+	position: absolute;
+	height: 140px;
+	width: 100%;
+	bottom: 2rem;
+	left: 0;
+	z-index: 10;
+	background-image: linear-gradient(#0000, #0000);
+}
 
 
 
@@ -409,6 +438,13 @@ p {
 	.video {
 		height: 600px;
 		width: 90%;
+	}
+
+	.immagini-1 {
+		width: 90%;
+	}
+	.immagini-2 {
+		width: 44%;
 	}
 	
 	.testo-tra-immagini {
@@ -501,6 +537,7 @@ p {
 		width: 100%;
 	}
 	#head-dx {
+		margin-top: 1.5rem;
 		width: 100%;
 	}
 
@@ -519,7 +556,8 @@ p {
 	}
 
 	.mobile-show {
-		display: block;
+		display: inline;
+
 	}
 	.mobile-hide {
 		display: none;
@@ -571,15 +609,13 @@ p {
 	#head-sotto {
 		padding-top: 0;
 		text-align: center;
+		overflow: hidden;
 	}
 	
 	#head-sotto-sx {
 		width: 90%;
 	}
 
-	#head-sotto-dx {
-		display: none;
-	}
 	
 	#head-sotto-sx-testo {
 		width: 100%;
@@ -636,7 +672,18 @@ p {
 	.testo-tra-immagini {
 		padding: 0;
 	}
+
+
 }
+
+	@media screen and (max-width: 400px) { 
+
+		.video {
+			height: 210px;
+		}
+	}
+
+
 
 
 
