@@ -23,7 +23,6 @@
 					document.getElementById("show-text-button").style.display = "inline";
 
 					var gradientColor = RGBToHex(document.body.style.backgroundColor);
-					console.log(gradientColor);
 					document.getElementById("text-hide-gradient").style.backgroundImage = "linear-gradient(#0000, " + gradientColor + ")";
 				}
 			}
@@ -34,12 +33,19 @@
 				document.getElementById("contenitore-immagini").style.marginTop = maxSize + "px";
 				document.getElementById("head").style.height = maxSize + "px";
 				document.getElementById("show-text-button").innerHTML = "read less";
+
+				document.getElementById("text-hide-gradient").style.backgroundImage = "linear-gradient(#0000, #0000)";
+
 				isMobileTextHidden = false;
 				return;
 			} 
 			else {
 				mobileInfoHide();
 				document.getElementById("show-text-button").innerHTML = "read more";
+				
+				var gradientColor = RGBToHex(document.body.style.backgroundColor);
+				document.getElementById("text-hide-gradient").style.backgroundImage = "linear-gradient(#0000, " + gradientColor + ")";
+
 				isMobileTextHidden = true;
 			}
 
