@@ -1,27 +1,15 @@
 		var maxSize = document.getElementById("head").offsetHeight + 50;
-		var mobileSize = 550;
-		var isMobileTextHidden = true;
-
-		document.getElementById("contenitore-immagini").style.height = "1000vh";
-
 
 		setInitialValues();
-		mobileInfoHide();
+
+		window.addEventListener('resize', function(event){
+			setInitialValues();
+		  });
 
 
 		function setInitialValues() {
-			document.getElementById("contenitore-immagini").style.marginTop = maxSize + "px";
-            document.getElementById("head").style.height = maxSize + "px";
-		}
-
-		function mobileInfoHide() {
-			if(window.innerWidth <= 650) {
-				if(document.getElementById("head").offsetHeight / window.innerHeight >= 0.9) {
-					window.scrollTo(0, 200);
-				}
+			if(window.innerWidth > 650) {
+				document.getElementById("contenitore-immagini").style.marginTop = maxSize + "px";
+				document.getElementById("head").style.height = maxSize + "px";
 			}
 		}
-
-		window.addEventListener("load", function () {
-				document.getElementById("contenitore-immagini").style.height = "auto";
-		  });

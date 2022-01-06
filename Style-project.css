@@ -538,6 +538,10 @@ p {
 
 @media screen and (max-width: 650px) {
 
+	#head {
+		position: relative;
+	}
+
 	#home-sopra {
 		text-align: center;
 	}
@@ -598,7 +602,7 @@ p {
 	.testo-gigante {
 		font-size: 2.4rem;
 		line-height: 3rem;
-		margin-top: 1rem;
+		margin-top: 7rem;
 	}
 	
 	
@@ -643,12 +647,7 @@ p {
 		padding: 0;
 	}
 
-	#head-sx-luna {
-		display: none;
-	}
-
-
-
+	
 
 }
 
