@@ -4,8 +4,7 @@
 
 		window.addEventListener('resize', function(event){
 			setInitialValues();
-		  });
-
+		});
 
 		function setInitialValues() {
 			if(window.innerWidth > 650) {

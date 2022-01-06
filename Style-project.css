@@ -540,10 +540,11 @@ p {
 
 	#head {
 		position: relative;
+		z-index: 10;
 	}
 
 	#home-sopra {
-		text-align: center;
+		text-align: left;
 	}
 	
 	#home-sotto-dx {
@@ -551,19 +552,16 @@ p {
 	}
 
 	#head-sx {
-		text-align: center;
+		text-align: left;
 	}
 
 	#head-dx {
-		text-align: center;
-	}
-
-	#head-sx-luna {
-		width: 100%;
+		text-align: left;
 	}
 
 	#contenitore-immagini {
 		padding: 1rem 0;
+		z-index: 10;
 	}
 
 	.back-svg {
@@ -582,7 +580,7 @@ p {
 
 	#head-sotto {
 		padding-top: 0;
-		text-align: center;
+		text-align: left;
 		overflow: hidden;
 	}
 	
@@ -607,8 +605,12 @@ p {
 	
 	
 	.testo-serif-piccolo {
-		font-size: 1.4rem;
-		line-height: 1.5rem;
+		font-size: 1.3rem;
+		line-height: 1.4rem;
+	}
+
+	.testo-sans {
+		font-size: 0.9rem;
 	}
 	
 	#head-sotto-sx {
@@ -628,6 +630,7 @@ p {
 	#head-sotto-dx-year {
 		width: 100%;
 		padding: 0;
+		margin: 0;
 	}
 	
 	#footer {
@@ -647,7 +650,6 @@ p {
 		padding: 0;
 	}
 
-	
 
 }
 
