@@ -114,7 +114,7 @@ html, #career-body {
 #home-sopra-sx {
 	width: 40%;
 	text-align: left;
-	margin-left: 6rem;
+	margin-left: 5rem;
 	display: inline-block;
 }
 
@@ -125,7 +125,7 @@ html, #career-body {
 }
 
 #home-sotto {
-	padding: 2.5rem 0rem 6rem 4rem;
+	padding: 2.5rem 0rem 6rem 5rem;
 	text-align: left;
 	vertical-align: top;
 }
