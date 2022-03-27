@@ -276,6 +276,10 @@ p {
 	margin-bottom: 2rem;
 }
 
+.autoplay-video {
+	width: 70%;
+}
+
 .mobile-show {
 	display: none;
 }
@@ -538,6 +542,12 @@ p {
 	}
 
 	
+.autoplay-video {
+	width: 90%;
+}
+
+
+	
 }
 
 @media screen and (max-width: 650px) {
@@ -653,6 +663,12 @@ p {
 	.testo-tra-immagini {
 		padding: 0;
 	}
+
+	
+.autoplay-video {
+	width: 100%;
+}
+
 
 
 }
