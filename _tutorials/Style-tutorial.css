@@ -1,0 +1,82 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	background-color: #FAF6E7;
+}
+
+code {
+    font-family: Source;
+    font-size: 1.1rem;
+}
+
+
+
+.red {
+	color:#ee5a7a !important;
+}
+
+.bold {
+	font-family: Karla_Bold;
+}
+
+@font-face {
+    font-family: Karla_Regular;
+    src: url(/_fonts/Karla-Regular.ttf); 
+}
+
+@font-face {
+    font-family: Karla_Italic;
+    src: url(/_fonts/Karla-Italic.ttf);
+}
+
+@font-face {
+    font-family: Karla_Bold;
+    src: url(/_fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+    font-family: Source;
+    src: url(/_fonts/SourceCodePro-Regular.ttf);
+}
+
+
+
+.tutorial-container {
+    margin-top: 6rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tutorial-text-block {
+    width: 70%;
+}
+
+.tutorial-code-block {
+    width: 100%;
+    padding-left: 1.5rem;
+    overflow-y: scroll;
+    background-color: #282a36;
+    border-radius: 25px;
+}
+
+
+
+
+.tutorial-title-big {
+    font-family: Karla_Bold;
+    font-size: 4rem;
+    color: black;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+}
+
+.tutorial-text {
+    font-family: Karla_Regular;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	margin-bottom: 1rem;
+}

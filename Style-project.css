@@ -19,35 +19,21 @@ p {
   }
 
 
-@font-face {
-    font-family: HappyTimes_italic;
-    src: url(happy-times-italic.otf);
-}
-
-@font-face {
-    font-family: HappyTimes_regular;
-    src: url(happy-times.otf);
-}
-
-@font-face {
-    font-family: HappyTimes_bold;
-    src: url(happy-times-bold.otf);
-}
 
 @font-face {
     font-family: Karla_regular;
-    src: url(Karla-Regular.ttf);
+    src: url(/_fonts/Karla-Regular.ttf);
 }
 
 @font-face {
     font-family: Karla_Bold;
-    src: url(Karla-Bold.ttf);
+    src: url(/_fonts/Karla-Bold.ttf);
 }
 
 
 @font-face {
 	font-family: noodle;
-	src: url(big_noodle_titling_oblique.ttf);
+	src: url(/_fonts/big_noodle_titling_oblique.ttf);
 }
 
 
