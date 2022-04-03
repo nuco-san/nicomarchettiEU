@@ -124,11 +124,15 @@ body {
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
+
+	margin-right: 4rem;
 }
 
 .home-sopra-navigation:hover {
 	color: black;
+	cursor: pointer;
 }
+
 
 
 #home-img {
@@ -445,13 +449,11 @@ body {
 	display: none;
 }
 
-#contacts-button {
-	margin-right: 4rem;
+#tutorials-menu {
+	width: 16rem;
+	display: none;
 }
 
-#contacts-button:hover {
-	cursor: pointer;
-}
 
 
 .contacs-menu-entry {

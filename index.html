@@ -32,12 +32,19 @@
 			<div id="home-sopra-dx">
 				<p class="home-sopra-navigation" id="contacts-button">contacts</p>
 				<a href="_career/" class="home-sopra-navigation">career</a>
+				<p class="home-sopra-navigation" id="tutorials-button">tutorials</a>
 
 				<div id="contacts-menu">
 					<a class="contacs-menu-entry" href="mailto:nicolo.marchetti@live.com" target="_BLANK">email</a>
 					<a class="contacs-menu-entry" href="https://www.linkedin.com/in/nicol%C3%B2-marchetti-6763bb1b4/" target="_BLANK">linkedin</a>
 					<a class="contacs-menu-entry" href="https://rateyourmusic.com/~juiceman7" target="_BLANK">rateyourmusic</a>
 					<a class="contacs-menu-entry" href="https://www.twitch.tv/nukepego" target="_BLANK">twitch</a>
+				</div>
+
+				<div id="tutorials-menu">
+					<a class="contacs-menu-entry" href="" target="_BLANK">unity flat shading</a><br>
+					<a class="contacs-menu-entry" href="" target="_BLANK">unity glitch</a><br>
+					<a class="contacs-menu-entry" href="" target="_BLANK">unity chroma key</a>
 				</div>
 			</div>
 
@@ -138,7 +145,7 @@
 				</div>
 			</a>
 
-			<a href="_projects/Polaris">
+			<!--<a href="_projects/Polaris">
 				<div class="link-home">
 					<div class="mobile-pres-container">
 						<p class="link-home-mobile-pres">Polaris Inc.</p>
@@ -147,7 +154,7 @@
 					<p class="link-home-text">Polaris Inc.</p>
 					<p class="link-home-genre">Video game</p>
 				</div>
-			</a>
+			</a>-->
 			
 			<!--<a href="_projects/Linea">
 				<div class="link-home">
@@ -159,6 +166,17 @@
 					<p class="link-home-genre">Print</p>
 				</div>
 			</a>-->
+
+			<a href="_projects/Damnation/">
+				<div class="link-home">
+					<div class="mobile-pres-container">
+						<p class="link-home-mobile-pres">Amazon's Damnation</p>
+					</div>
+					<img class ="link-home-img" src="_projects/Damnation/damnation_logo.png">
+					<p class="link-home-text">Amazon's Damnation</p>
+					<p class="link-home-genre">Data Visualization</p>
+				</div>
+			</a>
 			
 			<a href="_projects/Beetle">
 				<div class="link-home">
@@ -230,10 +248,13 @@
   <script>
 
 		var contactsIsOpen = false;
+		var tutorialsIsOpen = false;
 
 	  	$('#contacts-button').click(
 			  function() {
 				if(contactsIsOpen == false) {
+					$('#tutorials-menu').css('display', 'none');
+					tutorialsIsOpen = false;
 					$('#contacts-menu').css('display', 'block');
 					contactsIsOpen = true;
 				}
@@ -243,6 +264,23 @@
 				}
 			  }
 		);
+
+		$('#tutorials-button').click(
+			  function() {
+				if(tutorialsIsOpen == false) {
+					$('#contacts-menu').css('display', 'none');
+					contactsIsOpen = false;
+					$('#tutorials-menu').css('display', 'block');
+					tutorialsIsOpen = true;
+				}
+				else {
+					$('#tutorials-menu').css('display', 'none');
+					tutorialsIsOpen = false;
+				}
+			  }
+		);
+
+
 
 		$('.link-home').mouseenter( function(){
 			$(this).children('img').eq(0).css('opacity', '0');
