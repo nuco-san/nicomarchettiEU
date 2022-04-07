@@ -291,6 +291,8 @@ body {
 	padding: 0 0 0 4rem;
 	display: inline-block;
 	box-sizing:         border-box;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 .career-right {
@@ -299,8 +301,9 @@ body {
 	display: inline-block;
 	float: right;
 	background-color: black;
-	height: 100%;
+	height: 100vh;
 	box-sizing: border-box;
+	overflow-y: scroll;
 }
 
 #career-timeline {
@@ -347,7 +350,7 @@ body {
 }
 
 .career-text {
-	margin: 3.5rem 0 2rem 0;
+	margin: 3.5rem 0 8rem 0;
 	font-family: Karla_regular;
 	font-size: 1.6rem;
 	line-height: 2rem;
@@ -490,8 +493,8 @@ body {
 .back-svg-career {
 
 	display: block;
-	margin-top: 3rem;
-	width: 100px;
+	margin-top: 1rem;
+	width: 70px;
 
 	image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
