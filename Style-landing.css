@@ -546,6 +546,10 @@ body {
 	.link-home {
 		width: 30%;
 	}
+
+	#home-sopra-dx{
+		width: 30%;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -665,7 +669,7 @@ body {
 	}
 
 	.nico {
-		margin: 10px 0 30px 0;
+		margin: 60px 0 30px 0;
 	}
 }
 
