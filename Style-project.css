@@ -22,18 +22,18 @@ p {
 
 @font-face {
     font-family: Karla_regular;
-    src: url(/_fonts/Karla-Regular.ttf);
+    src: url(/fonts/Karla-Regular.ttf);
 }
 
 @font-face {
     font-family: Karla_Bold;
-    src: url(/_fonts/Karla-Bold.ttf);
+    src: url(/fonts/Karla-Bold.ttf);
 }
 
 
 @font-face {
 	font-family: noodle;
-	src: url(/_fonts/big_noodle_titling_oblique.ttf);
+	src: url(/fonts/big_noodle_titling_oblique.ttf);
 }
 
 
