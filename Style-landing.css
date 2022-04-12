@@ -455,6 +455,10 @@ body {
 	width: 6rem;
 }
 
+#icona-home:hover {
+	box-shadow: 5px 8px 8px #0006;
+}
+
 #contacts-menu {
 	width: 6rem;
 	display: none;
