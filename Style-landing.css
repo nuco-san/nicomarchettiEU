@@ -14,7 +14,7 @@ body {
 }
 
 .bold {
-	font-family: Karla_Bold;
+	font-weight: 900;
 }
 
 @font-face {
@@ -38,8 +38,21 @@ body {
 }
 
 
+@font-face {
+	font-family: apfel;
+	src: url(/fonts/ApfelGrotezk-Regular.otf);
+}
+
+@font-face {
+	font-family: apfel-fett;
+	src: url(/fonts/ApfelGrotezk-Fett.otf);
+}
 
 
+@font-face {
+	font-family: necto;
+	src: url(/fonts/NectoMono-Regular.otf);
+}
 
 
 
@@ -114,8 +127,8 @@ body {
 }
 
 .home-sopra-navigation {
-	font-family: Karla_Bold;
-	font-size: 1.4rem;
+	font-family: necto;
+	font-size: 1.2rem;
 	line-height: 1rem;
 	color:#ee5a7a;
 	
@@ -185,11 +198,12 @@ body {
 }
 
 .nico {
-	font-family: Karla_Bold;
-	font-size: 4rem;
+	font-family: apfel;
+	font-size: 9rem;
 	color: black;
-	line-height: 4rem;
+	line-height: 8rem;
 	margin-bottom: 3rem;
+	margin-top: 3rem;
 }
 
 .home-career-link{
@@ -201,7 +215,7 @@ body {
 }
 
 .nico-descrizione {
-	font-family: Karla_Regular;
+	font-family: necto;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	margin-bottom: 1rem;
@@ -244,7 +258,7 @@ body {
 }
 
 .link-home-mobile-pres {
-	font-family: Karla_Bold;
+	font-family: apfel;
 	font-size: 1.2rem;
 	line-height: 1.2rem;
 	color: black;
@@ -268,7 +282,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: Karla_Bold;
+	font-family: necto;
 	font-size: 1rem;
 	line-height: 1.2rem;
 	color:#ee5a7a;
@@ -385,7 +399,7 @@ body {
 .career-mail {
 	color: #ee5a7a;
 	
-	font-family: Karla_Bold;
+	font-family: necto;
 	cursor: pointer;
 	white-space: nowrap;
 }
@@ -472,9 +486,9 @@ body {
 
 
 .contacs-menu-entry {
-	font-family: Karla_Regular;
+	font-family: necto;
 	color: black;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .contacs-menu-entry:hover {

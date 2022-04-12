@@ -38,6 +38,23 @@ p {
 
 
 
+@font-face {
+	font-family: apfel;
+	src: url(/fonts/ApfelGrotezk-Regular.otf);
+}
+
+@font-face {
+	font-family: apfel-fett;
+	src: url(/fonts/ApfelGrotezk-Fett.otf);
+}
+
+
+@font-face {
+	font-family: necto;
+	src: url(/fonts/NectoMono-Regular.otf);
+}
+
+
 
 
 
@@ -192,12 +209,11 @@ p {
 
 
 .testo-gigante {
-	font-family: Karla_Bold;
-	font-size: 4rem;
-	line-height: 4rem;
+	font-family: apfel; 
+	font-size: 7rem;
+	line-height: 7rem;
 	margin: 0;
 	color: black;
-	text-decoration: underline;
 	text-decoration-color: black;
 }
 
@@ -216,9 +232,9 @@ p {
 
 .testo-serif-piccolo {
 	color: black;
-	font-family: Karla_Regular;
-	font-size: 1.4rem;
-	line-height: 1.6rem;
+	font-family: necto;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
 
 .testo-serif-piu-piccolo {
@@ -330,9 +346,10 @@ p {
 }
 
 .pistachio-onwhite {
-	font-family: Karla_Bold;
+	font-family: necto;
 	color: black;
 	text-decoration: underline;
+	font-weight: 900;
 }
 
 .pistachio-onwhite:hover {
