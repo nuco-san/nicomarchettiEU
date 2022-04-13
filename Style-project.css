@@ -229,6 +229,12 @@ p {
 	color: black;
 }
 
+.previous-next {
+	font-family: font-testi-bold;
+	font-size: 1.4rem;
+	color: black;
+}
+
 .testo-sans {
 	font-family: font-testi;
 	font-size: 0.9rem;
