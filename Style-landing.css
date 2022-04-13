@@ -14,7 +14,7 @@ body {
 }
 
 .bold {
-	font-weight: 900;
+	font-family: font-testi-bold;
 }
 
 @font-face {
@@ -32,28 +32,27 @@ body {
     src: url(/fonts/Karla-Bold.ttf);
 }
 
-@font-face {
-	font-family: noodle;
-	src: url(/fonts/big_noodle_titling_oblique.ttf);
-}
-
 
 @font-face {
-	font-family: apfel;
+	font-family: font-titolo;
 	src: url(/fonts/ApfelGrotezk-Regular.otf);
 }
 
-@font-face {
-	font-family: apfel-fett;
-	src: url(/fonts/ApfelGrotezk-Fett.otf);
-}
-
 
 @font-face {
-	font-family: necto;
-	src: url(/fonts/NectoMono-Regular.otf);
+	font-family: font-testi;
+	src: url(/fonts/Compagnon-Roman.otf);
 }
 
+@font-face {
+	font-family: font-testi-bold;
+	src: url(/fonts/Compagnon-Medium.otf);
+}
+
+@font-face {
+	font-family: font-corsivo;
+	src: url(/fonts/Compagnon-Bold.otf);
+}
 
 
 
@@ -63,20 +62,6 @@ body {
 	display: none;
 }
 
-.fruit {
-	width: 90px;
-	cursor: pointer;
-}
-
-.frui2 {
-	font-size: 7rem;
-	cursor: pointer;
-	text-shadow: 2px 2px 5px;
-}
-
-.fruit:hover {
-	text-shadow: 2px 2px 5px;
-}
 
 #griglia_l {
 	width: 1.8rem;
@@ -117,7 +102,7 @@ body {
 #home-sopra-dx {
 	display: inline-block;
 	vertical-align: top;
-	padding: 3.6rem 0 0 4rem;
+	padding: 1rem 0 0 4rem;
 }
 
 #home-sotto {
@@ -127,9 +112,10 @@ body {
 }
 
 .home-sopra-navigation {
-	font-family: necto;
-	font-size: 1.2rem;
-	line-height: 1rem;
+	font-family: font-testi;
+	font-weight: 900;
+	font-size: 1.4rem;
+	line-height: 1.2rem;
 	color:#ee5a7a;
 	
 	display: inline-block;
@@ -198,10 +184,19 @@ body {
 }
 
 .nico {
-	font-family: apfel;
+	font-family: font-titolo;
 	font-size: 9rem;
 	color: black;
 	line-height: 8rem;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.titolo-career {
+	font-family: font-titolo;
+	font-size: 7rem;
+	color: black;
+	line-height: 6rem;
 	margin-bottom: 3rem;
 	margin-top: 3rem;
 }
@@ -215,7 +210,7 @@ body {
 }
 
 .nico-descrizione {
-	font-family: necto;
+	font-family: font-testi;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	margin-bottom: 1rem;
@@ -250,7 +245,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: Karla_Bold;
+	font-family: font-titolo;
 	font-size: 1.8rem;
 	line-height: 2rem;
 	color: black;
@@ -258,7 +253,7 @@ body {
 }
 
 .link-home-mobile-pres {
-	font-family: apfel;
+	font-family: font-titolo;
 	font-size: 1.2rem;
 	line-height: 1.2rem;
 	color: black;
@@ -282,7 +277,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: necto;
+	font-family: font-corsivo;
 	font-size: 1rem;
 	line-height: 1.2rem;
 	color:#ee5a7a;
@@ -340,16 +335,16 @@ body {
 }
 
 .career-anno {
-	font-family: Karla_regular;
+	font-family: font-testi-bold;
 	color: white;
 	font-size: 1.1rem;
 	margin: 0 0 0.5rem 0;
 }
 
 .career-lavoro {
-	font-family: Karla_regular;
+	font-family: font-testi;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin: 0 0 2rem 0;
 }
 
@@ -373,9 +368,9 @@ body {
 
 .career-text {
 	margin: 3.5rem 0 8rem 0;
-	font-family: Karla_regular;
-	font-size: 1.6rem;
-	line-height: 2rem;
+	font-family: font-testi;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
 }
 
 .career-link {
@@ -399,7 +394,7 @@ body {
 .career-mail {
 	color: #ee5a7a;
 	
-	font-family: necto;
+	font-family: font-corsivo;
 	cursor: pointer;
 	white-space: nowrap;
 }
@@ -486,7 +481,7 @@ body {
 
 
 .contacs-menu-entry {
-	font-family: necto;
+	font-family: font-testi;
 	color: black;
 	font-size: 1rem;
 }
@@ -496,12 +491,12 @@ body {
 }
 
 .pistachio {
-	font-family: Karla_Regular;
+	font-family: font-testi-bold;
 	color: white;
 }
 
 .pistachio-onwhite {
-	font-family: Karla_Bold;
+	font-family: font-testi-bold;
 	color: black;
 	text-decoration: underline;
 }

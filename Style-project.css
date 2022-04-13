@@ -38,22 +38,27 @@ p {
 
 
 
+
 @font-face {
-	font-family: apfel;
+	font-family: font-titolo;
 	src: url(/fonts/ApfelGrotezk-Regular.otf);
 }
 
-@font-face {
-	font-family: apfel-fett;
-	src: url(/fonts/ApfelGrotezk-Fett.otf);
-}
-
 
 @font-face {
-	font-family: necto;
-	src: url(/fonts/NectoMono-Regular.otf);
+	font-family: font-testi;
+	src: url(/fonts/Compagnon-Roman.otf);
 }
 
+@font-face {
+	font-family: font-testi-bold;
+	src: url(/fonts/Compagnon-Medium.otf);
+}
+
+@font-face {
+	font-family: font-corsivo;
+	src: url(/fonts/Compagnon-Bold.otf);
+}
 
 
 
@@ -99,8 +104,8 @@ p {
 
 #head-sotto {
 	width: 100%;
-	padding: 5rem 0 0 0;
-	
+	padding: 3rem 0 0 0;
+	margin-bottom: 2rem;
 }
 
 #head-sotto-sx {
@@ -209,7 +214,7 @@ p {
 
 
 .testo-gigante {
-	font-family: apfel; 
+	font-family: font-titolo; 
 	font-size: 7rem;
 	line-height: 7rem;
 	margin: 0;
@@ -219,20 +224,20 @@ p {
 
 
 .titoletto-sans {
-	font-family: Karla_Bold;
+	font-family: font-corsivo;
 	font-size: 1.4rem;
 	color: black;
 }
 
 .testo-sans {
-	font-family: Karla_Regular;
-	font-size: 1rem;
+	font-family: font-testi;
+	font-size: 0.9rem;
 	color: black;
 }
 
 .testo-serif-piccolo {
 	color: black;
-	font-family: necto;
+	font-family: font-testi;
 	font-size: 1.3rem;
 	line-height: 1.5rem;
 }
@@ -346,7 +351,7 @@ p {
 }
 
 .pistachio-onwhite {
-	font-family: necto;
+	font-family: font-testi-bold;
 	color: black;
 	text-decoration: underline;
 	font-weight: 900;
