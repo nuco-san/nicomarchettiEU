@@ -238,6 +238,7 @@ p {
 .testo-sans {
 	font-family: font-testi;
 	font-size: 0.9rem;
+	line-height: 1.3rem;
 	color: black;
 }
 
@@ -245,7 +246,7 @@ p {
 	color: black;
 	font-family: font-testi;
 	font-size: 1.3rem;
-	line-height: 1.5rem;
+	line-height: 1.7rem;
 }
 
 .testo-serif-piu-piccolo {
@@ -517,8 +518,8 @@ p {
 @media screen and (max-width: 800px) {
 	
 	.testo-gigante {
-		font-size: 3.4rem;
-		line-height: 4.2rem;
+		font-size: 6rem;
+		line-height: 6rem;
 	}
 	
 	#head-sx {
@@ -552,7 +553,7 @@ p {
 	}
 
 	.immagini-2 {
-		width: 80%;
+		width: 90%;
 	}
 
 	
@@ -611,10 +612,6 @@ p {
 		text-align: left;
 		overflow: hidden;
 	}
-	
-	#head-sotto-sx {
-		width: 90%;
-	}
 
 	
 	#head-sotto-sx-testo {
@@ -626,19 +623,19 @@ p {
 	}
 	
 	.testo-gigante {
-		font-size: 2.4rem;
-		line-height: 3rem;
+		font-size: 5rem;
+		line-height: 4.5rem;
 		margin-top: 7rem;
 	}
 	
 	
 	.testo-serif-piccolo {
 		font-size: 1.3rem;
-		line-height: 1.4rem;
+		line-height: 1.7rem;
 	}
 
 	.testo-sans {
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 	}
 	
 	#head-sotto-sx {
@@ -646,8 +643,8 @@ p {
 	}
   
 	#head-sotto-dx {
-		width: 90%;
-		padding: 1rem 0;
+		width: 100%;
+		margin: 3rem 0 0 0;
 	}
 
 	#head-sotto-dx-team {
