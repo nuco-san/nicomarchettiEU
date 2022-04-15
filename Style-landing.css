@@ -117,6 +117,7 @@ body {
 	font-size: 1.4rem;
 	line-height: 1.2rem;
 	color:#ee5a7a;
+	margin-bottom: 0;
 	
 	display: inline-block;
 
@@ -302,7 +303,7 @@ body {
 
 
 .career-left {
-	width: 50%;
+	width: 49.5%;
 	padding: 0 3rem 0 3rem;
 	display: inline-block;
 	box-sizing: border-box;
@@ -313,25 +314,18 @@ body {
 
 .career-right {
 	padding: 0 3rem 0 3rem;
-	width: 50%;
+	width: 49.5%;
 	display: inline-block;
-	float: right;
 	background-color: black;
 	height: 100vh;
 	box-sizing: border-box;
 	overflow-y: scroll;
 	margin: 0px;
+	float: right;
 }
 
 #career-timeline {
 	width: 80%;
-}
-
-.career-title {
-	font-family: HappyTimes_italic;
-	font-size: 4rem;
-	line-height: 4.4rem;
-	margin: 0;
 }
 
 .career-anno {
@@ -367,7 +361,7 @@ body {
 }
 
 .career-text {
-	margin: 3.5rem 0 8rem 0;
+	margin: 0 0 8rem 0;
 	font-family: font-testi;
 	font-size: 1.4rem;
 	line-height: 1.7rem;
@@ -471,22 +465,24 @@ body {
 #contacts-menu {
 	width: 6rem;
 	display: none;
+	padding: 1rem 0 1rem 0;
 }
 
 #tutorials-menu {
 	width: 16rem;
 	display: none;
+	padding: 1rem 0 1rem 0;
 }
 
 
 
-.contacs-menu-entry {
+.contacts-menu-entry {
 	font-family: font-testi;
 	color: black;
 	font-size: 1rem;
 }
-
-.contacs-menu-entry:hover {
+ 
+.contacts-menu-entry:hover {
 	color: #ee5a7a;
 }
 
@@ -543,14 +539,6 @@ body {
 	#home-sopra-sx {
 		width: 50%;
 	}
-
-	.career-left {
-		width: 45%;
-	}
-
-	.career-right {
-		width: 45%;
-	}
 	
 	#career-timeline {
 		width: 80%;
@@ -562,6 +550,12 @@ body {
 
 	#home-sopra-dx{
 		width: 30%;
+	}
+
+	.titolo-career {
+		font-size: 6rem;
+		line-height: 5rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -576,6 +570,11 @@ body {
 }
 
 @media (max-width: 1000px) {
+
+	.back-svg-career {
+
+		display: none;
+	}
 
 	#home-sotto {
 		padding: 2.5rem 2.5rem 6rem 2rem;
@@ -646,13 +645,13 @@ body {
 	}
 
 	#home-sopra-sx {
-		width: 80%;
+		width: 90%;
 		margin: 0;
 		text-align: left;
 	}
 
 	#home-sopra-dx {
-		width: 80%;
+		width: 90%;
 		margin: 0 0 2rem 0;
 		padding: 0;
 		text-align: left;
@@ -679,10 +678,20 @@ body {
 
 	.home-sopra-navigation {
 		font-size: 1.6rem;
+		margin-bottom: 0;
+		margin-top: 1rem;
 	}
 
 	.nico {
 		margin: 60px 0 30px 0;
+	}
+
+	.contacts-menu-entry {
+		font-size: 1.4rem;
+	}
+
+	.titolo-career {
+		margin-top: 0;
 	}
 }
 
@@ -692,7 +701,7 @@ body {
 	
 	
 	.link-home {
-		width: 80%;
+		width: 90%;
 		height: 12rem;
 	}
 
@@ -702,8 +711,9 @@ body {
 	}
 
 	.nico {
-		font-size: 3rem;
-		line-height: 3.1rem;
+		font-size: 4rem;
+		line-height: 4.1rem;
+		margin-top: 1rem;
 	}
 	.back-svg {
 		position: absolute;
@@ -728,6 +738,20 @@ body {
 
 	#home-sotto {
 		padding-top: 1rem;
+	}
+
+	#home-sopra {
+		padding: 0 0 2rem 0;
+	}
+
+	.titolo-career {
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+
+	.career-left {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 }
