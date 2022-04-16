@@ -60,7 +60,10 @@ p {
 	src: url(/fonts/Compagnon-Bold.otf);
 }
 
-
+@font-face {
+	font-family: font-italico;
+	src: url(/fonts/Compagnon-LightItalic.otf);
+}
 
 
 
@@ -203,7 +206,9 @@ p {
 	text-align: center;
 }
 
-
+.italico {
+	font-family: font-italico;
+}
 
 
 
