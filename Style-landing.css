@@ -710,11 +710,6 @@ body {
 		margin-top: 0;
 	}
 
-	
-	#home-credits {
-		width: 80%;
-		margin: 0 0 2rem 2rem;
-	}
 }
 
 
@@ -774,6 +769,11 @@ body {
 	.career-left {
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+
+	#home-credits {
+		width: 80%;
+		margin: 0 0 2rem 2rem;
 	}
 
 }
