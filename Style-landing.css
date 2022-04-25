@@ -526,6 +526,16 @@ body {
 
 
 
+#home-credits {
+	width: 40%;
+	margin: 0 0 2rem 5rem;
+}
+
+.home-credits-text {
+	font-family: font-testi;
+	font-size: 1rem;
+}
+
 
 
 
@@ -579,6 +589,12 @@ body {
 	#home-sotto {
 		padding: 2.5rem 2.5rem 6rem 2rem;
 	}
+
+	#home-credits {
+		width: 60%;
+		margin: 0 0 2rem 4rem;
+	}
+	
 
 	#home-sopra {
 		padding-top: 0;
@@ -692,6 +708,12 @@ body {
 
 	.titolo-career {
 		margin-top: 0;
+	}
+
+	
+	#home-credits {
+		width: 80%;
+		margin: 0 0 2rem 2rem;
 	}
 }
 
