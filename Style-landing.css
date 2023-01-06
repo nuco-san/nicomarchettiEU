@@ -41,12 +41,12 @@ body {
 
 @font-face {
 	font-family: font-testi;
-	src: url(/fonts/Compagnon-Roman.otf);
+	src: url(/fonts/ZillaSlab-Regular.ttf);
 }
 
 @font-face {
 	font-family: font-testi-bold;
-	src: url(/fonts/Compagnon-Medium.otf);
+	src: url(/fonts/ZillaSlab-SemiBold.ttf);
 }
 
 @font-face {
@@ -212,8 +212,8 @@ body {
 
 .nico-descrizione {
 	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
 	margin-bottom: 1rem;
 }
 
@@ -363,8 +363,8 @@ body {
 .career-text {
 	margin: 0 0 8rem 0;
 	font-family: font-testi;
-	font-size: 1.4rem;
-	line-height: 1.7rem;
+	font-size: 1.7rem;
+	line-height: 2.1rem;
 }
 
 .career-link {

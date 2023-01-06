@@ -47,12 +47,12 @@ p {
 
 @font-face {
 	font-family: font-testi;
-	src: url(/fonts/Compagnon-Roman.otf);
+	src: url(/fonts/ZillaSlab-Regular.ttf);
 }
 
 @font-face {
 	font-family: font-testi-bold;
-	src: url(/fonts/Compagnon-Medium.otf);
+	src: url(/fonts/ZillaSlab-SemiBold.ttf);
 }
 
 @font-face {
@@ -62,7 +62,7 @@ p {
 
 @font-face {
 	font-family: font-italico;
-	src: url(/fonts/Compagnon-LightItalic.otf);
+	src: url(/fonts/ZillaSlab-Italic.ttf);
 }
 
 
@@ -240,16 +240,16 @@ p {
 
 .testo-sans {
 	font-family: font-testi;
-	font-size: 0.9rem;
-	line-height: 1.3rem;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
 	color: black;
 }
 
 .testo-serif-piccolo {
 	color: black;
 	font-family: font-testi;
-	font-size: 1.3rem;
-	line-height: 1.7rem;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
 }
 
 .testo-serif-piu-piccolo {
@@ -638,7 +638,7 @@ p {
 	}
 
 	.testo-sans {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	
 	#head-sotto-sx {
