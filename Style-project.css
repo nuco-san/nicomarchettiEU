@@ -245,6 +245,12 @@ p {
 	color: black;
 }
 
+.testo-sans-title {
+	font-family: font-testi-bold;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+}
+
 .testo-serif-piccolo {
 	color: black;
 	font-family: font-testi;
