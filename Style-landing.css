@@ -93,7 +93,7 @@ body {
 }
 
 #home-sopra-sx {
-	width: 50%;
+	width: 55%;
 	text-align: left;
 	margin-left: 5rem;
 	display: inline-block;
@@ -106,7 +106,7 @@ body {
 }
 
 #home-sotto {
-	padding: 2.5rem 0rem 6rem 5rem;
+	padding: 2.5rem 0rem 2rem 5rem;
 	text-align: left;
 	vertical-align: top;
 }
@@ -260,6 +260,17 @@ body {
 	color: black;
 	margin:0;
 	padding: 0;
+}
+
+
+.project-type-title {
+	font-family: font-testi-bold;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: black;
+	margin:0 0 1rem 0;
+	padding: 0;
+	text-decoration: underline;
 }
 
 .mobile-pres-container {
