@@ -114,8 +114,8 @@ body {
 .home-sopra-navigation {
 	font-family: font-testi;
 	font-weight: 900;
-	font-size: 1.4rem;
-	line-height: 1.2rem;
+	font-size: 1.8rem;
+	line-height: 1.6rem;
 	color:#ee5a7a;
 	margin-bottom: 0;
 	
@@ -490,7 +490,7 @@ body {
 .contacts-menu-entry {
 	font-family: font-testi;
 	color: black;
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
  
 .contacts-menu-entry:hover {
