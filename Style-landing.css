@@ -314,42 +314,57 @@ body {
 
 
 .career-left {
-	width: 49.5%;
-	padding: 0 3rem 0 3rem;
-	display: inline-block;
-	box-sizing: border-box;
-	height: 100vh;
-	overflow-y: scroll;
-	margin: 0px;
+	width: 45%;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
 .career-right {
-	padding: 0 3rem 0 3rem;
-	width: 49.5%;
+	padding-bottom: 11rem;
 	display: inline-block;
 	background-color: black;
-	height: 100vh;
-	box-sizing: border-box;
-	overflow-y: scroll;
 	margin: 0px;
-	float: right;
+	width: 100%;
 }
 
-#career-timeline {
+.timeline-container {
+	width: 45%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.timeline-container-inner {
 	width: 80%;
+}
+
+.timeline-mail {
+	color: #ee5a7a;
+	margin-top: 5rem;
+	font-family: font-corsivo;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.timeline-mail:hover {
+	color: white;
+}
+
+.career-photo {
+	width: 100%;
+	height: auto;
 }
 
 .career-anno {
 	font-family: font-testi-bold;
 	color: white;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	margin: 0 0 0.5rem 0;
 }
 
 .career-lavoro {
 	font-family: font-testi;
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	margin: 0 0 2rem 0;
 }
 
@@ -522,7 +537,7 @@ body {
 
 	display: inline-block;
 	margin-top: 1rem;
-	width: 50px;
+	width: 80px;
 
 	image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
