@@ -107,6 +107,7 @@ img {
 #head-dx {
 	width: 45%;
 	display: inline-block;
+	display: none;
 }
 
 #head-sotto {
@@ -134,7 +135,14 @@ img {
 #head-sotto-dx-team {
 	display: inline-block;
 	width: 50%;
+	background-color: #FAF6E7;
+	padding: 0.5rem;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  	
+	border-radius: 10px;
 }
+
 
 #head-sotto-dx-year {
 	display: inline-block;
