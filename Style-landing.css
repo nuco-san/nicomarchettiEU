@@ -8,9 +8,18 @@ body {
 	background-color: #FAF6E7;
 }
 
+div {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;  
+}
+
+img {
+	border-radius: 10px;
+}
 
 .red {
-	color:#ee5a7a !important;
+	color: #ee5a7a !important;
 }
 
 .bold {
@@ -18,18 +27,18 @@ body {
 }
 
 @font-face {
-    font-family: Karla_regular;
-    src: url(/fonts/Karla-Regular.ttf); 
+	font-family: Karla_regular;
+	src: url(/fonts/Karla-Regular.ttf);
 }
 
 @font-face {
-    font-family: Karla_italic;
-    src: url(/fonts/Karla-Italic.ttf);
+	font-family: Karla_italic;
+	src: url(/fonts/Karla-Italic.ttf);
 }
 
 @font-face {
-    font-family: Karla_Bold;
-    src: url(/fonts/Karla-Bold.ttf);
+	font-family: Karla_Bold;
+	src: url(/fonts/Karla-Bold.ttf);
 }
 
 
@@ -68,7 +77,7 @@ body {
 	height: 100vh;
 	position: fixed;
 	left: 0;
-	top:0;
+	top: 0;
 	background-image: url(griglia.svg);
 }
 
@@ -77,7 +86,7 @@ body {
 	height: 100vh;
 	position: fixed;
 	right: 0;
-	top:0;
+	top: 0;
 	background-image: url(griglia.svg);
 }
 
@@ -116,15 +125,19 @@ body {
 	font-weight: 900;
 	font-size: 1.8rem;
 	line-height: 1.6rem;
-	color:#ee5a7a;
+	color: #ee5a7a;
 	margin-bottom: 0;
-	
+
 	display: inline-block;
 
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
+	-webkit-user-select: none;
+	/* Safari */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* IE10+/Edge */
+	user-select: none;
+	/* Standard */
 
 	margin-right: 4rem;
 }
@@ -166,12 +179,16 @@ body {
 	color: #529778;
 	background-color: white;
 }
+
 ::selection {
-	background: #ee5a7a; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-	background: #ee5a7a; /* Gecko Browsers */
-  }
+	background: #ee5a7a;
+	/* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+	background: #ee5a7a;
+	/* Gecko Browsers */
+}
 
 #home-footer-img {
 	width: 97vw;
@@ -195,14 +212,14 @@ body {
 
 .titolo-career {
 	font-family: font-titolo;
-	font-size: 5.3rem;
+	font-size: 5rem;
 	color: black;
-	line-height: 5rem;
-	margin-bottom: 3rem;
-	margin-top: 3rem;
+	line-height: 4rem;
+	margin: 0;
 }
 
-.home-career-link{
+
+.home-career-link {
 	font-family: Karla_Bold;
 	font-size: 1.4rem;
 	color: black;
@@ -223,21 +240,21 @@ body {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	margin: 0.8rem 0.5rem 0.8rem 0.5rem ;
+	margin: 0.8rem 0.5rem 0.8rem 0.5rem;
 	overflow: hidden;
 }
 
 
 .link-home:hover {
-    color: #ee5a7a;
+	color: #ee5a7a;
 }
 
 .link-home-img {
 	height: 100%;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .link-home-text {
@@ -258,7 +275,7 @@ body {
 	font-size: 1.2rem;
 	line-height: 1.2rem;
 	color: black;
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -268,7 +285,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.8rem;
 	color: black;
-	margin:0 0 1rem 0;
+	margin: 0 0 1rem 0;
 	padding: 0;
 	text-decoration: underline;
 }
@@ -276,7 +293,7 @@ body {
 .mobile-pres-container {
 	position: absolute;
 	right: 0;
-    bottom: 0;
+	bottom: 0;
 	padding: 0.4rem;
 	background-color: #e6be50;
 	z-index: 100;
@@ -292,7 +309,7 @@ body {
 	font-family: font-corsivo;
 	font-size: 1rem;
 	line-height: 1.2rem;
-	color:#ee5a7a;
+	color: #ee5a7a;
 	margin-top: 0;
 	position: absolute;
 }
@@ -300,11 +317,11 @@ body {
 
 
 .vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 44%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	margin: 0;
+	position: absolute;
+	top: 44%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 #career-body {
@@ -312,25 +329,85 @@ body {
 	margin: 0px;
 }
 
-
-.career-left {
-	width: 45%;
-	margin-left: 50%;
-	transform: translateX(-50%);
+.career-photo-container {
+	width: 25%;
+	display: inline-block;
+	float: left;
 }
 
-.career-right {
-	padding-bottom: 11rem;
+.career-photo {
+	width: 80%;
+}
+
+
+.career-aboutme-text-container {
+	width: 55%;
 	display: inline-block;
+}
+
+.career-longtext-container {
+	width: 75%;
+}
+
+.career-header{
+	height: 10rem;
+	padding: 4rem 3rem 2rem 3rem;
+}
+
+.titolo-career-container {
+	display: inline-block;
+}
+
+.icona-career-container {
+	width: 25%;
+	display: inline-block;
+}
+
+#icona-career {
+	width: 6rem;
+}
+
+#icona-career:hover {
+	box-shadow: 5px 8px 8px #0006;
+}
+
+
+.career-button-home {
+	position: absolute;
+	top: 6rem;
+	right: 15rem;
+	width: 6rem;
+	text-align: center;
+}
+
+.career-button-home-label {
+	font-family: font-testi-bold;
+	font-size: 1.4rem;
+	color: black;
+	line-height: 1.4rem;
+	margin-top: 1rem;
+	text-decoration: underline;
+}
+
+.career-about-me {
+	width: 100%;
+	padding: 3rem 3rem 6rem 3rem;
+}
+
+.career-timeline {
 	background-color: black;
 	margin: 0px;
 	width: 100%;
+	padding: 6rem 3rem 4rem 3rem;
 }
 
 .timeline-container {
 	width: 45%;
-	margin-left: 50%;
-	transform: translateX(-50%);
+	margin-left: 25%;
+}
+
+.titolo-timeline-container {
+	padding-bottom: 3rem;
 }
 
 .timeline-container-inner {
@@ -349,22 +426,18 @@ body {
 	color: white;
 }
 
-.career-photo {
-	width: 100%;
-	height: auto;
-}
 
 .career-anno {
 	font-family: font-testi-bold;
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	margin: 0 0 0.5rem 0;
 }
 
 .career-lavoro {
 	font-family: font-testi;
 	color: white;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	margin: 0 0 2rem 0;
 }
 
@@ -387,10 +460,16 @@ body {
 }
 
 .career-text {
-	margin: 0 0 8rem 0;
 	font-family: font-testi;
-	font-size: 1.7rem;
-	line-height: 2.1rem;
+	font-size: 1.5rem;
+	line-height: 1.9rem;
+}
+
+.career-text-big {
+	font-family: font-testi;
+	font-size: 2.1rem;
+	line-height: 2.6rem;
+	margin: 0 0 3rem 0;
 }
 
 .career-link {
@@ -398,7 +477,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.8rem;
 	color: black;
-	margin: 0 1rem 0 0 ;
+	margin: 0 1rem 0 0;
 }
 
 .career-link-small {
@@ -413,7 +492,7 @@ body {
 
 .career-mail {
 	color: #ee5a7a;
-	
+
 	font-family: font-corsivo;
 	cursor: pointer;
 	white-space: nowrap;
@@ -443,6 +522,7 @@ body {
 .mobile-show {
 	display: none;
 }
+
 .mobile-hide {
 	display: inline-block;
 }
@@ -458,35 +538,45 @@ body {
 
 #career-img-faccia {
 	width: 7rem;
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;  
+	image-rendering: optimizeSpeed;
+	/* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;
+	/* Firefox                        */
+	image-rendering: -o-crisp-edges;
+	/* Opera                          */
+	image-rendering: -webkit-optimize-contrast;
+	/* Chrome (and eventually Safari) */
+	image-rendering: pixelated;
+	/* Chrome */
+	image-rendering: optimize-contrast;
+	/* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 
 #icona-home {
 
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor; 
-
-	position: absolute;
-	top: 6rem;
-	right: 6rem;
-	width: 6rem;
+	image-rendering: optimizeSpeed;
+	/* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;
+	/* Firefox                        */
+	image-rendering: -o-crisp-edges;
+	/* Opera                          */
+	image-rendering: -webkit-optimize-contrast;
+	/* Chrome (and eventually Safari) */
+	image-rendering: pixelated;
+	/* Chrome */
+	image-rendering: optimize-contrast;
+	/* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;
+	width: 100%;
 }
+
 
 #icona-home:hover {
 	box-shadow: 5px 8px 8px #0006;
 }
+
 
 #contacts-menu {
 	width: 6rem;
@@ -507,7 +597,7 @@ body {
 	color: black;
 	font-size: 1.4rem;
 }
- 
+
 .contacts-menu-entry:hover {
 	color: #ee5a7a;
 }
@@ -540,10 +630,10 @@ body {
 	width: 80px;
 
 	image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: pixelated;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
 }
 
 .back-svg-career:hover {
@@ -575,7 +665,7 @@ body {
 	#home-sopra-sx {
 		width: 50%;
 	}
-	
+
 	#career-timeline {
 		width: 80%;
 	}
@@ -584,7 +674,7 @@ body {
 		width: 30%;
 	}
 
-	#home-sopra-dx{
+	#home-sopra-dx {
 		width: 30%;
 	}
 
@@ -620,7 +710,7 @@ body {
 		width: 60%;
 		margin: 0 0 2rem 4rem;
 	}
-	
+
 
 	#home-sopra {
 		padding-top: 0;
@@ -633,13 +723,13 @@ body {
 }
 
 @media (max-width: 800px) {
-	
-	
+
+
 	#about-dida {
 		display: block;
 	}
-	
-	
+
+
 	#home-sotto {
 		width: 100%;
 		padding: 3rem 0 1rem 0;
@@ -648,16 +738,16 @@ body {
 
 
 	.vertical-center {
-	  top: 54%;
-	  -ms-transform: translateY(-50%);
-	  transform: translateY(-50%);
+		top: 54%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
-	
+
 	.career-title {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-	
+
 	.career-left {
 		width: 100%;
 		padding: 2rem;
@@ -668,13 +758,13 @@ body {
 		height: auto;
 		padding: 2rem;
 	}
-	
+
 	#career-timeline {
 		width: 100%;
 	}
 
 	#home-footer-img {
-		content:url("blue_small_vertical.jpg");
+		content: url("blue_small_vertical.jpg");
 	}
 
 	.link-home {
@@ -701,7 +791,7 @@ body {
 
 	.link-home-mobile-pres {
 		display: block;
-		
+
 	}
 
 	#icona-home {
@@ -741,8 +831,8 @@ body {
 
 
 @media (max-width: 600px) {
-	
-	
+
+
 	.link-home {
 		width: 90%;
 		height: 12rem;
@@ -758,6 +848,7 @@ body {
 		line-height: 4.1rem;
 		margin-top: 1rem;
 	}
+
 	.back-svg {
 		position: absolute;
 		top: 40px;
@@ -776,7 +867,7 @@ body {
 	}
 
 	#home-sopra-dx {
-		margin: 0 ;
+		margin: 0;
 	}
 
 	#home-sotto {
@@ -803,17 +894,3 @@ body {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
