@@ -399,7 +399,6 @@ img {
 	}
 	
 	#head-sx {
-		width: 50%;
 		margin-right: 0vw;
 	}
 	#head-dx {
@@ -451,10 +450,6 @@ img {
 		margin-top: 2rem;
 	}
 
-
-	#head-sx {
-		width: 55%;
-	}
 
 	#head-sotto {
 		padding-top: 3rem;
@@ -517,8 +512,8 @@ img {
 @media screen and (max-width: 800px) {
 	
 	.testo-gigante {
-		font-size: 6rem;
-		line-height: 6rem;
+		font-size: 5rem;
+		line-height: 5rem;
 	}
 	
 	#head-sx {
@@ -596,14 +591,11 @@ img {
 		position: absolute;
 		top: 20px;
 		left: 0px;
-		width: 60px;
+		width: 100px;
 	}
 
 	#disciplina {
-		position: absolute;
-		top: 40px;
-		right: 10px;
-		font-size: 1rem;
+		display: none;
 	}
 
 	#head-sotto {
@@ -622,9 +614,10 @@ img {
 	}
 	
 	.testo-gigante {
-		font-size: 5rem;
-		line-height: 4.5rem;
+		font-size: 4rem;
+		line-height: 4rem;
 		margin-top: 7rem;
+		margin-bottom: 1.5rem;
 	}
 	
 	
@@ -648,7 +641,7 @@ img {
 
 	#head-sotto-dx-team {
 		width: 90%;
-		padding: 0 0 1rem 0;
+		margin-bottom: 1.5rem;
 	}
 
 	#head-sotto-dx-year {
