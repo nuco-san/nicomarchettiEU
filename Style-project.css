@@ -386,13 +386,11 @@ img {
 }
 
 .pistachio-onwhite:hover {
-	background-color: black;
-	color: white;
+	background-color: #de4053;
 }
 
 .pistachio:hover {
-	background-color: white;
-	color: black;
+	color: #de4053;
 }
 
 

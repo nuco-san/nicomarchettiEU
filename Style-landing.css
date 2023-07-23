@@ -1,47 +1,3 @@
-a {
-	text-decoration: none;
-}
-
-body {
-	margin: 0px;
-	padding: 0px;
-	background-color: #FAF6E7;
-}
-
-div {
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;  
-}
-
-img {
-	border-radius: 10px;
-}
-
-.red {
-	color: #de4053 !important;
-}
-
-.bold {
-	font-family: font-testi-bold;
-}
-
-@font-face {
-	font-family: Karla_regular;
-	src: url(/fonts/Karla-Regular.ttf);
-}
-
-@font-face {
-	font-family: Karla_italic;
-	src: url(/fonts/Karla-Italic.ttf);
-}
-
-@font-face {
-	font-family: Karla_Bold;
-	src: url(/fonts/Karla-Bold.ttf);
-}
-
-
 @font-face {
 	font-family: font-titolo;
 	src: url(/fonts/ApfelGrotezk-Regular.otf);
@@ -63,39 +19,61 @@ img {
 	src: url(/fonts/Compagnon-Medium.otf);
 }
 
+a {
+	text-decoration: none;
+}
 
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FAF6E7;
+}
 
+div {
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+}
 
+img {
+	border-radius: 10px;
+}
 
-#about-dida {
-	display: none;
+.red {
+	color: #de4053 !important;
+}
+
+.bold {
+	font-family: font-testi-bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.italic {
+	font-family: Karla-italic;
+}
+
+::selection {
+	background: #de4053;
+	/* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+	background: #de4053;
+	/* Gecko Browsers */
+}
+
+.white {
+	color: white;
 }
 
 
-#griglia_l {
-	width: 1.8rem;
-	height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
-	background-image: url(griglia.svg);
-}
 
-#griglia_r {
-	width: 1.8rem;
-	height: 100vh;
-	position: fixed;
-	right: 0;
-	top: 0;
-	background-image: url(griglia.svg);
-}
 
-#divisorio {
-	width: 0.3rem;
-	background-color: #EE6A5A;
-	height: 100vh;
-	display: inline-block;
-}
 
 #home-sopra {
 	padding: 2rem 0 2rem 0;
@@ -121,120 +99,6 @@ img {
 	background-color: #f5eed5;
 }
 
-.home-sopra-navigation {
-	font-family: font-testi;
-	font-weight: 900;
-	font-size: 1.8rem;
-	line-height: 1.6rem;
-	color: #de4053;
-	margin-bottom: 0;
-
-	display: inline-block;
-
-	-webkit-user-select: none;
-	/* Safari */
-	-moz-user-select: none;
-	/* Firefox */
-	-ms-user-select: none;
-	/* IE10+/Edge */
-	user-select: none;
-	/* Standard */
-
-	margin-right: 4rem;
-}
-
-.home-sopra-navigation:hover {
-	color: black;
-	cursor: pointer;
-}
-
-
-
-#home-img {
-	display: inline-block;
-	float: right;
-}
-
-#orlo {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-#home-header {
-	height: 97vh;
-}
-
-
-#home-footer {
-	text-align: center;
-}
-
-#home_nome {
-	position: fixed;
-	bottom: 0;
-	left: 2rem;
-	font-family: Karla_bold;
-	font-size: 2rem;
-	line-height: 1rem;
-	color: #529778;
-	background-color: white;
-}
-
-::selection {
-	background: #de4053;
-	/* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-	background: #de4053;
-	/* Gecko Browsers */
-}
-
-#home-footer-img {
-	width: 97vw;
-}
-
-.testo-gigante {
-	font-family: Karla_Bold;
-	font-size: 2rem;
-	color: black;
-	line-height: 2.5rem;
-}
-
-.nico {
-	font-family: font-titolo;
-	font-size: 9rem;
-	color: black;
-	line-height: 8rem;
-	margin-bottom: 3rem;
-	margin-top: 1rem;
-}
-
-.titolo-career {
-	font-family: font-titolo;
-	font-size: 5rem;
-	color: black;
-	line-height: 4rem;
-	margin: 0;
-}
-
-
-.home-career-link {
-	font-family: Karla_Bold;
-	font-size: 1.4rem;
-	color: black;
-	line-height: 2rem;
-	float: right;
-}
-
-.nico-descrizione {
-	font-family: font-testi;
-	font-size: 1.6rem;
-	line-height: 1.9rem;
-	margin-bottom: 1rem;
-}
-
 .link-home {
 	width: 30%;
 	display: inline-block;
@@ -244,50 +108,12 @@ img {
 	overflow: hidden;
 }
 
-
-.link-home-img:hover {
-	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.45);
-}
-
 .link-home-img {
 	width: 96%;
 }
 
-.link-home-text {
-	font-family: font-titolo;
-	font-size: 1.5rem;
-	line-height: 1.6rem;
-	color: black;
-	margin-bottom: 0;
-}
-
-
-.project-type-title {
-	font-family: font-testi-bold;
-	font-size: 1.6rem;
-	line-height: 1.8rem;
-	color: black;
-	margin: 0 0 1rem 0;
-	padding: 0;
-	text-decoration: underline;
-}
-
-.link-home-genre {
-	font-family: font-corsivo;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
-	color: #de4053;
-	margin-top: 0;
-}
-
-
-
-.vertical-center {
-	margin: 0;
-	position: absolute;
-	top: 44%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+.link-home-img:hover {
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.45);
 }
 
 #career-body {
@@ -305,7 +131,6 @@ img {
 	width: 80%;
 }
 
-
 .career-aboutme-text-container {
 	width: 55%;
 	display: inline-block;
@@ -315,8 +140,7 @@ img {
 	width: 80%;
 }
 
-.career-header{
-	height: 10rem;
+.career-header {
 	padding: 4rem 3rem 2rem 3rem;
 }
 
@@ -337,7 +161,6 @@ img {
 	box-shadow: 5px 8px 8px #0006;
 }
 
-
 .career-button-home {
 	position: absolute;
 	top: 6rem;
@@ -346,183 +169,13 @@ img {
 	text-align: center;
 }
 
-.career-button-home-label {
-	font-family: font-testi-bold;
-	font-size: 1.4rem;
-	color: black;
-	line-height: 1.4rem;
-	margin-top: 1rem;
-	text-decoration: underline;
-}
-
 .career-about-me {
 	width: 100%;
 	padding: 3rem 3rem 6rem 3rem;
 	background-color: #f5eed5;
 }
 
-.career-timeline {
-	background-color: black;
-	margin: 0px;
-	width: 100%;
-	padding: 6rem 3rem 4rem 3rem;
-}
-
-.timeline-container {
-	width: 45%;
-	margin-left: 25%;
-}
-
-.titolo-timeline-container {
-	padding-bottom: 3rem;
-}
-
-.timeline-container-inner {
-	width: 80%;
-}
-
-.timeline-mail {
-	color: #ee5a7a;
-	margin-top: 5rem;
-	font-family: font-corsivo;
-	font-size: 2rem;
-	cursor: pointer;
-}
-
-.timeline-mail:hover {
-	color: white;
-}
-
-
-.career-anno {
-	font-family: font-testi-bold;
-	color: white;
-	font-size: 1.1rem;
-	margin: 0 0 0.5rem 0;
-}
-
-.career-lavoro {
-	font-family: font-testi;
-	color: white;
-	font-size: 1.3rem;
-	margin: 0 0 2rem 0;
-}
-
-.underline {
-	text-decoration: underline;
-}
-
-.italic {
-	font-family: Karla-italic;
-}
-
-.green {
-	color: #529778;
-}
-
-
-.stellina {
-	color: red;
-	font-size: 6rem;
-}
-
-.career-text {
-	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 1.9rem;
-}
-
-.career-text-big {
-	font-family: font-testi;
-	font-size: 2.1rem;
-	line-height: 2.6rem;
-	margin: 0 0 3rem 0;
-}
-
-.career-link {
-	font-family: Karla_Bold;
-	font-size: 1.6rem;
-	line-height: 1.8rem;
-	color: black;
-	margin: 0 1rem 0 0;
-}
-
-.career-link-small {
-	font-family: Karla_Bold;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
-}
-
-.career-link-small:hover {
-	color: #de4053;
-}
-
-.career-mail {
-	color: #de4053;
-
-	font-family: font-corsivo;
-	cursor: pointer;
-	white-space: nowrap;
-}
-
-.career-mail:hover {
-	color: black;
-}
-
-
-
-.cloud-svg {
-	width: 40px;
-}
-
-
-.info-svg {
-	width: 60px;
-}
-
-.white {
-	color: white;
-}
-
-
-
-.mobile-show {
-	display: none;
-}
-
-.mobile-hide {
-	display: inline-block;
-}
-
-.back-svg {
-	width: 70px;
-	fill: #de4053;
-}
-
-.back-svg:hover {
-	fill: #e6be50;
-}
-
-#career-img-faccia {
-	width: 7rem;
-	image-rendering: optimizeSpeed;
-	/* STOP SMOOTHING, GIVE ME SPEED  */
-	image-rendering: -moz-crisp-edges;
-	/* Firefox                        */
-	image-rendering: -o-crisp-edges;
-	/* Opera                          */
-	image-rendering: -webkit-optimize-contrast;
-	/* Chrome (and eventually Safari) */
-	image-rendering: pixelated;
-	/* Chrome */
-	image-rendering: optimize-contrast;
-	/* CSS3 Proposed                  */
-	-ms-interpolation-mode: nearest-neighbor;
-}
-
-
 #icona-home {
-
 	image-rendering: optimizeSpeed;
 	/* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;
@@ -544,82 +197,11 @@ img {
 	box-shadow: 5px 8px 8px #0006;
 }
 
-
-#contacts-menu {
-	width: 6rem;
-	display: none;
-	padding: 1rem 0 1rem 0;
-}
-
-#tutorials-menu {
-	width: 16rem;
-	display: none;
-	padding: 1rem 0 1rem 0;
-}
-
-
-
-.contacts-menu-entry {
-	font-family: font-testi;
-	color: black;
-	font-size: 1.4rem;
-}
-
-.contacts-menu-entry:hover {
-	color: #de4053;
-}
-
-.pistachio {
-	font-family: font-testi-bold;
-	color: white;
-}
-
-.pistachio-onwhite {
-	font-family: font-testi-bold;
-	color: black;
-	text-decoration: underline;
-}
-
-.pistachio-onwhite:hover {
-	background-color: black;
-	color: white;
-}
-
-.pistachio:hover {
-	background-color: white;
-	color: black;
-}
-
-.back-svg-career {
-
-	display: inline-block;
-	margin-top: 1rem;
-	width: 80px;
-
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	-ms-interpolation-mode: nearest-neighbor;
-	image-rendering: pixelated;
-}
-
-.back-svg-career:hover {
-	box-shadow: 5px 8px 8px #0006;
-}
-
-
-
 #home-credits {
 	width: 35%;
 	display: inline-block;
 	vertical-align: top;
 }
-
-.home-credits-text {
-	font-family: font-testi;
-	font-size: 1rem;
-}
-
 
 #footer {
 	background-color: #FAF6E7;
@@ -633,16 +215,9 @@ img {
 	display: inline-block;
 }
 
-.footer-contact-title {
-	font-family: font-testi;
-	font-size: 1.3rem;
-}
-
 .footer-contact-link {
 	font-size: 1.4rem;
-	text-decoration: none;
 }
-
 
 .nico-btn {
 	background-color: #de4053;
@@ -660,239 +235,167 @@ img {
 	cursor: pointer;
 }
 
+.nico {
+	font-family: font-titolo;
+	font-size: 9rem;
+	color: black;
+	line-height: 8rem;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.titolo-career {
+	font-family: font-titolo;
+	font-size: 5rem;
+	color: black;
+	line-height: 4rem;
+	margin: 0;
+}
+
+.nico-descrizione {
+	font-family: font-testi;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+	margin-bottom: 1rem;
+}
+
+.project-type-title {
+	font-family: font-testi-bold;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: black;
+	margin: 0 0 1rem 0;
+	padding: 0;
+	text-decoration: underline;
+}
+
+.link-home-text {
+	font-family: font-titolo;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	color: black;
+	margin-bottom: 0;
+}
+
+.link-home-genre {
+	font-family: font-corsivo;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	color: #de4053;
+	margin-top: 0;
+}
+
+.career-button-home-label {
+	font-family: font-testi-bold;
+	font-size: 1.4rem;
+	color: black;
+	line-height: 1.4rem;
+	margin-top: 1rem;
+	text-decoration: underline;
+}
+
+.career-text {
+	font-family: font-testi;
+	font-size: 1.5rem;
+	line-height: 1.9rem;
+}
+
+.career-text-big {
+	font-family: font-testi;
+	font-size: 2.1rem;
+	line-height: 2.6rem;
+	margin: 0 0 3rem 0;
+}
+
+.home-credits-text {
+	font-family: font-testi;
+	font-size: 1rem;
+}
+
+.footer-contact-title {
+	font-family: font-testi;
+	font-size: 1.3rem;
+}
+
+.pistachio {
+	font-family: font-testi-bold;
+	color: white;
+}
+
+.pistachio-onwhite {
+	font-family: font-testi-bold;
+	color: black;
+	text-decoration: underline;
+}
+
+.pistachio-onwhite:hover {
+	color: #de4053;
+}
+
+.pistachio:hover {
+	color: #de4053;
+}
+
+
 
 
 @media (max-width: 1400px) {
 
-	#home-sopra-sx {
-		width: 50%;
-	}
-
-	#career-timeline {
-		width: 80%;
-	}
-
-	.link-home {
-		width: 30%;
-	}
-
-	#home-sopra-dx {
-		width: 30%;
-	}
-
-	.titolo-career {
-		font-size: 6rem;
-		line-height: 5rem;
-		margin-bottom: 2rem;
+	.career-aboutme-text-container{
+		width: 65%;
 	}
 }
 
 @media (max-width: 1200px) {
 
-	#icona-home {
-		top: 17rem;
-		right: 6rem;
-		width: 6rem;
+	.career-longtext-container {
+		width: 100%;
 	}
-
 }
 
 @media (max-width: 1000px) {
 
-	.back-svg-career {
-
-		display: none;
-	}
-
-	#home-sotto {
-		padding: 2.5rem 2.5rem 6rem 2rem;
-	}
-
-	#home-credits {
-		width: 60%;
-		margin: 0 0 2rem 4rem;
-	}
-
-
-	#home-sopra {
-		padding-top: 0;
-	}
-
-	#home-sopra-sx {
-		margin-left: 3rem;
-	}
-
 }
 
 @media (max-width: 800px) {
-
-
-	#about-dida {
-		display: block;
-	}
-
-
-	#home-sotto {
-		width: 100%;
-		padding: 3rem 0 1rem 0;
-		text-align: center;
-	}
-
-
-	.vertical-center {
-		top: 54%;
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
-	.career-title {
-		font-size: 3rem;
-		line-height: 4rem;
-	}
-
-	.career-left {
-		width: 100%;
-		padding: 2rem;
-	}
-
-	.career-right {
-		width: 100%;
-		height: auto;
-		padding: 2rem;
-	}
-
-	#career-timeline {
-		width: 100%;
-	}
-
-	#home-footer-img {
-		content: url("blue_small_vertical.jpg");
-	}
-
-	.link-home {
-		width: 40%;
-	}
-
-	#home-sopra {
-		text-align: center;
-		padding: 0;
-	}
-
-	#home-sopra-sx {
-		width: 90%;
-		margin: 0;
-		text-align: left;
-	}
-
-	#home-sopra-dx {
-		width: 90%;
-		margin: 0 0 2rem 0;
-		padding: 0;
-		text-align: left;
-	}
-
-	.link-home-mobile-pres {
-		display: block;
-
-	}
-
-	#icona-home {
-		top: 4rem;
-		right: 4rem;
-		width: 6rem;
-	}
-
-	#contacts-button {
-		margin-right: 2rem;
-	}
-
-	#say-hello {
-		display: none;
-	}
-
-	.home-sopra-navigation {
-		font-size: 1.6rem;
-		margin-bottom: 0;
-		margin-top: 1rem;
-	}
-
-	.nico {
-		margin: 60px 0 30px 0;
-	}
-
-	.contacts-menu-entry {
-		font-size: 1.4rem;
-	}
-
-	.titolo-career {
-		margin-top: 0;
-	}
-
 }
 
 
 
 @media (max-width: 600px) {
 
-
-	.link-home {
-		width: 90%;
-		height: 12rem;
+	.career-header {
+		padding: 2rem 1.5rem 2rem 1.5rem;
 	}
 
-	.nico-descrizione {
-		font-size: 1.3rem;
-		line-height: 1.5rem;
+	.career-about-me {
+		padding: 3rem 1.5rem 6rem 1.5rem;
 	}
 
-	.nico {
-		font-size: 4rem;
-		line-height: 4.1rem;
-		margin-top: 1rem;
+	.career-text-big {
+		font-size: 1.8em;
+		line-height: 2.2rem;
+		margin: 0 0 2rem 0;
 	}
 
-	.back-svg {
-		position: absolute;
-		top: 40px;
-		left: 40px;
-		width: 55px;
+	.career-photo-container {
+		display: none;
 	}
 
-	#icona-home {
-		width: 3.3rem;
-		right: 2rem;
-		top: 2rem;
+	.career-aboutme-text-container{
+		width: 100%;
 	}
 
-	.mobile-pres-container {
-		display: block;
+	#footer {
+		padding: 2rem 1.5rem 2rem 1.5rem;
 	}
 
-	#home-sopra-dx {
-		margin: 0;
-	}
-
-	#home-sotto {
-		padding-top: 1rem;
-	}
-
-	#home-sopra {
-		padding: 0 0 2rem 0;
-	}
-
-	.titolo-career {
-		font-size: 4rem;
-		line-height: 3rem;
-	}
-
-	.career-left {
-		padding-left: 1rem;
-		padding-right: 1rem;
+	#footer-contacts-container {
+		width: 100%;
+		padding-bottom: 3rem;
 	}
 
 	#home-credits {
-		width: 80%;
-		margin: 0 0 2rem 2rem;
+		width: 100%;
 	}
-
 }
