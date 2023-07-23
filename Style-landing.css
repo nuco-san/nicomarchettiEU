@@ -76,13 +76,12 @@ img {
 
 
 #home-sopra {
-	padding: 2rem 0 2rem 0;
+	padding: 2rem 5rem 2rem 5rem;
 }
 
 #home-sopra-sx {
 	width: 55%;
 	text-align: left;
-	margin-left: 5rem;
 	display: inline-block;
 }
 
@@ -93,14 +92,14 @@ img {
 }
 
 #home-sotto {
-	padding: 2.5rem 0rem 2rem 5rem;
+	padding: 2.5rem 5rem 2rem 5rem;
 	text-align: left;
 	vertical-align: top;
 	background-color: #f5eed5;
 }
 
 .link-home {
-	width: 30%;
+	width: 31%;
 	display: inline-block;
 	position: relative;
 	text-align: left;
@@ -164,7 +163,7 @@ img {
 .career-button-home {
 	position: absolute;
 	top: 6rem;
-	right: 15rem;
+	right: 10rem;
 	width: 6rem;
 	text-align: center;
 }
@@ -233,6 +232,16 @@ img {
 .nico-btn:hover {
 	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
 	cursor: pointer;
+}
+
+#career-alternative-link {
+	font-family: font-testi-bold;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	margin-top: 1rem;
+	text-decoration: underline;
+	color: black;
+	display: none;
 }
 
 .nico {
@@ -351,32 +360,158 @@ img {
 	.career-longtext-container {
 		width: 100%;
 	}
+
+	.nico {
+		font-size: 7rem;
+		line-height: 6rem;
+	}
+
+	#home-sopra {
+		padding: 2rem 3rem 2rem 3rem;
+	}
+
+	#home-sotto {
+		padding: 2rem 3rem 2rem 3rem;
+	}
+
+	.career-button-home {
+		top: 3rem;
+		right: 6rem;
+	}
+
+	#footer {
+		padding: 2rem 3rem 2rem 3rem;
+	}
 }
 
 @media (max-width: 1000px) {
 
+	#home-sopra-sx {
+		width: 75%;
+	}
+
 }
 
 @media (max-width: 800px) {
+
+	.link-home {
+		width: 45%;
+	}
+
+	.nico {
+		font-size: 5rem;
+		line-height: 4rem;
+	}
+
+	.nico-descrizione {
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+	}
+
+	#home-sopra-sx {
+		width: 85%;
+	}
+
+	.career-button-home {
+		right: 3rem;
+		width: 5rem;
+	}
+
+	.career-button-home-label {
+		font-size: 1.1rem;
+		line-height: 1.2rem;
+	}
+
+	#home-credits {
+		width: 45%;
+	}
+
 }
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+
+	.nico {
+		font-size: 4rem;
+		line-height: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	.career-button-home {
+		right: 1.5rem;
+		width: 3rem;
+	}
+
+	.career-button-home {
+		display: none;
+	}
+
+	#career-alternative-link {
+		display: block;
+	}
+
+	.nico-descrizione {
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+	}
+
+	#home-sopra {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	#home-sotto {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.link-home {
+		width: 100%;
+	}
+
+	.link-home-text {
+		margin-top: 0.5rem;
+	}
+
+	.link-home-genre {
+		margin-bottom: 0;
+	}
+
+	#home-sopra-sx {
+		width: 100%;
+	}
+
+	.icona-career-container {
+		width: 40%;
+	}
+
+	.icona-career {
+		width: 4rem;
+	}
+
+	.titolo-career {
+		font-size: 3rem;
+	}
 
 	.career-header {
-		padding: 2rem 1.5rem 2rem 1.5rem;
+		padding: 1rem;
 	}
 
 	.career-about-me {
-		padding: 3rem 1.5rem 6rem 1.5rem;
+		padding: 1rem;
 	}
 
 	.career-text-big {
-		font-size: 1.8em;
-		line-height: 2.2rem;
+		font-size: 1.5em;
+		line-height: 1.9rem;
 		margin: 0 0 2rem 0;
 	}
+
+	.career-text {
+		font-size: 1.2em;
+		line-height: 1.5rem;
+		margin: 0 0 2rem 0;
+	}
+
 
 	.career-photo-container {
 		display: none;
@@ -387,7 +522,7 @@ img {
 	}
 
 	#footer {
-		padding: 2rem 1.5rem 2rem 1.5rem;
+		padding: 2rem 1rem 2rem 1rem;
 	}
 
 	#footer-contacts-container {
