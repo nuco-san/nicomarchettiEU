@@ -234,6 +234,22 @@ img {
 	cursor: pointer;
 }
 
+.nico-btn {
+	background-color: #de4053;
+	border-radius: 10px;
+	padding: 1rem;
+	color: white;
+	border: none;
+	font-family: font-corsivo;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
+
+.nico-btn:hover {
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
 #career-alternative-link {
 	font-family: font-testi-bold;
 	font-size: 1.6rem;

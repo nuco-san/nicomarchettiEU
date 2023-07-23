@@ -23,27 +23,7 @@ img {
   }
 
 
-
-@font-face {
-    font-family: Karla_regular;
-    src: url(/fonts/Karla-Regular.ttf);
-}
-
-@font-face {
-    font-family: Karla_Bold;
-    src: url(/fonts/Karla-Bold.ttf);
-}
-
-
-@font-face {
-	font-family: noodle;
-	src: url(/fonts/big_noodle_titling_oblique.ttf);
-}
-
-
-
-
-@font-face {
+  @font-face {
 	font-family: font-titolo;
 	src: url(/fonts/ApfelGrotezk-Regular.otf);
 }
@@ -61,15 +41,8 @@ img {
 
 @font-face {
 	font-family: font-corsivo;
-	src: url(/fonts/Compagnon-Bold.otf);
+	src: url(/fonts/Compagnon-Medium.otf);
 }
-
-@font-face {
-	font-family: font-italico;
-	src: url(/fonts/ZillaSlab-Italic.ttf);
-}
-
-
 
 
 
@@ -164,6 +137,7 @@ img {
 	z-index: 10;
 	background-color: #FAF6E7;
 	box-shadow: 5px 0px 30px #0006;
+	border-radius: 10px;
 }
 
 
@@ -211,7 +185,7 @@ img {
 
 
 #footer {
-	padding: 1.5rem 0 3rem 0;
+	padding: 1.5rem 0 5rem 0;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -224,9 +198,21 @@ img {
 
 
 
+.nico-btn-black {
+	background-color: black;
+	border-radius: 10px;
+	padding: 1rem;
+	color: white;
+	border: none;
+	font-family: font-corsivo;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
 
-
-
+.nico-btn-black:hover {
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
 
 .testo-gigante {
 	font-family: font-titolo; 
