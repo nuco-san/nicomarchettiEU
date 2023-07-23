@@ -19,7 +19,7 @@ img {
 }
 
 .red {
-	color: #ee5a7a !important;
+	color: #5f5dca !important;
 }
 
 .bold {
@@ -60,7 +60,7 @@ img {
 
 @font-face {
 	font-family: font-corsivo;
-	src: url(/fonts/Compagnon-Bold.otf);
+	src: url(/fonts/Compagnon-Medium.otf);
 }
 
 
@@ -98,7 +98,7 @@ img {
 }
 
 #home-sopra {
-	padding-top: 2rem;
+	padding: 2rem 0 2rem 0;
 }
 
 #home-sopra-sx {
@@ -118,6 +118,7 @@ img {
 	padding: 2.5rem 0rem 2rem 5rem;
 	text-align: left;
 	vertical-align: top;
+	background-color: #f5eed5;
 }
 
 .home-sopra-navigation {
@@ -125,7 +126,7 @@ img {
 	font-weight: 900;
 	font-size: 1.8rem;
 	line-height: 1.6rem;
-	color: #ee5a7a;
+	color: #5f5dca;
 	margin-bottom: 0;
 
 	display: inline-block;
@@ -181,12 +182,12 @@ img {
 }
 
 ::selection {
-	background: #ee5a7a;
+	background: #5f5dca;
 	/* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-	background: #ee5a7a;
+	background: #5f5dca;
 	/* Gecko Browsers */
 }
 
@@ -245,7 +246,7 @@ img {
 
 
 .link-home-img:hover {
-	box-shadow: 5px 8px 8px #0006;
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.45);
 }
 
 .link-home-img {
@@ -254,7 +255,7 @@ img {
 
 .link-home-text {
 	font-family: font-titolo;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	line-height: 1.6rem;
 	color: black;
 	margin-bottom: 0;
@@ -273,9 +274,9 @@ img {
 
 .link-home-genre {
 	font-family: font-corsivo;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	line-height: 1.6rem;
-	color: #ee5a7a;
+	color: #5f5dca;
 	margin-top: 0;
 }
 
@@ -295,7 +296,7 @@ img {
 }
 
 .career-photo-container {
-	width: 25%;
+	width: 35%;
 	display: inline-block;
 	float: left;
 }
@@ -311,7 +312,7 @@ img {
 }
 
 .career-longtext-container {
-	width: 75%;
+	width: 80%;
 }
 
 .career-header{
@@ -324,7 +325,7 @@ img {
 }
 
 .icona-career-container {
-	width: 25%;
+	width: 35%;
 	display: inline-block;
 }
 
@@ -357,6 +358,7 @@ img {
 .career-about-me {
 	width: 100%;
 	padding: 3rem 3rem 6rem 3rem;
+	background-color: #f5eed5;
 }
 
 .career-timeline {
@@ -452,11 +454,11 @@ img {
 }
 
 .career-link-small:hover {
-	color: #ee5a7a;
+	color: #5f5dca;
 }
 
 .career-mail {
-	color: #ee5a7a;
+	color: #5f5dca;
 
 	font-family: font-corsivo;
 	cursor: pointer;
@@ -494,7 +496,7 @@ img {
 
 .back-svg {
 	width: 70px;
-	fill: #ee5a7a;
+	fill: #5f5dca;
 }
 
 .back-svg:hover {
@@ -564,7 +566,7 @@ img {
 }
 
 .contacts-menu-entry:hover {
-	color: #ee5a7a;
+	color: #5f5dca;
 }
 
 .pistachio {
@@ -608,8 +610,9 @@ img {
 
 
 #home-credits {
-	width: 40%;
-	margin: 0 0 2rem 5rem;
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .home-credits-text {
@@ -618,10 +621,44 @@ img {
 }
 
 
+#footer {
+	background-color: #FAF6E7;
+	width: 100%;
+	padding: 3rem 6rem 3rem 6rem;
+	vertical-align: top;
+}
+
+#footer-contacts-container {
+	width: 50%;
+	display: inline-block;
+}
+
+.footer-contact-title {
+	font-family: font-testi;
+	font-size: 1.3rem;
+}
+
+.footer-contact-link {
+	font-size: 1.4rem;
+	text-decoration: none;
+}
 
 
+.nico-btn {
+	background-color: #5f5dca;
+	border-radius: 10px;
+	padding: 1rem;
+	color: white;
+	border: none;
+	font-family: font-corsivo;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
 
-
+.nico-btn:hover {
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
 
 
 
