@@ -19,7 +19,7 @@ img {
 }
 
 .red {
-	color: #5f5dca !important;
+	color: #de4053 !important;
 }
 
 .bold {
@@ -126,7 +126,7 @@ img {
 	font-weight: 900;
 	font-size: 1.8rem;
 	line-height: 1.6rem;
-	color: #5f5dca;
+	color: #de4053;
 	margin-bottom: 0;
 
 	display: inline-block;
@@ -182,12 +182,12 @@ img {
 }
 
 ::selection {
-	background: #5f5dca;
+	background: #de4053;
 	/* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-	background: #5f5dca;
+	background: #de4053;
 	/* Gecko Browsers */
 }
 
@@ -276,7 +276,7 @@ img {
 	font-family: font-corsivo;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
-	color: #5f5dca;
+	color: #de4053;
 	margin-top: 0;
 }
 
@@ -454,11 +454,11 @@ img {
 }
 
 .career-link-small:hover {
-	color: #5f5dca;
+	color: #de4053;
 }
 
 .career-mail {
-	color: #5f5dca;
+	color: #de4053;
 
 	font-family: font-corsivo;
 	cursor: pointer;
@@ -496,7 +496,7 @@ img {
 
 .back-svg {
 	width: 70px;
-	fill: #5f5dca;
+	fill: #de4053;
 }
 
 .back-svg:hover {
@@ -566,7 +566,7 @@ img {
 }
 
 .contacts-menu-entry:hover {
-	color: #5f5dca;
+	color: #de4053;
 }
 
 .pistachio {
@@ -645,7 +645,7 @@ img {
 
 
 .nico-btn {
-	background-color: #5f5dca;
+	background-color: #de4053;
 	border-radius: 10px;
 	padding: 1rem;
 	color: white;
