@@ -308,19 +308,24 @@ img {
 	margin-top: 0;
 }
 
-.career-button-home-label {
-	font-family: font-testi-bold;
-	font-size: 1.4rem;
+.main-menu-entry {
+	font-family: font-corsivo;
+	font-size: 1.6rem;
 	color: black;
-	line-height: 1.4rem;
-	margin-top: 1rem;
+	line-height: 1.6rem;
+	cursor: pointer;
+}
+
+.main-menu-entry:hover {
 	text-decoration: underline;
 }
 
 
 #main-menu {
+	margin-top: 6rem;
 	text-align: right;
 	display: none;
+	padding-right: 10px;
 }
 
 #main-menu-container {
@@ -328,6 +333,8 @@ img {
 	top: 6rem;
 	right: 10rem;
 	text-align: right;
+	border-radius: 10px;
+	padding-left: 2rem;
 }
 
 

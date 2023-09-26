@@ -40,9 +40,9 @@
 				<img src="Burger_1.png" id="icona-home">
 			</div>
 			<div id="main-menu">
-				<p class="career-button-home-label">Work</p>
-				<p class="career-button-home-label">About</p>
-				<p class="career-button-home-label">Illustration</p>
+				<p class="main-menu-entry">Work</p>
+				<p class="main-menu-entry">About</p>
+				<p class="main-menu-entry">Illustration</p>
 			</div>
 		</a>
 
@@ -149,11 +149,15 @@
 			menuActivated = true;
 			document.getElementById("icona-home").src = "Burger_2.png";
 			document.getElementById("main-menu").style.display = "block";
+			document.getElementById("main-menu-container").style.boxShadow = "5px 8px 8px #0006";
+			document.getElementById("main-menu-container").style.backgroundColor = "#f5eed5";
 		}
 		else {
 			menuActivated = false;
 			document.getElementById("icona-home").src = "Burger_1.png";
 			document.getElementById("main-menu").style.display = "none";
+			document.getElementById("main-menu-container").style.boxShadow = "0px 0px 0px #0000";
+			document.getElementById("main-menu-container").style.backgroundColor = "#FAF6E7";
 		}
 	}
 </script>
