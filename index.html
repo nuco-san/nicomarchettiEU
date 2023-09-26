@@ -35,12 +35,17 @@
 		</div>
 
 
-		<a href="career">
-			<div class="career-button-home">
-				<img src="icona.png" id="icona-home">
-				<p class="career-button-home-label">About me</p>
+		<a id="main-menu-container">
+			<div class="menu-button-home" onclick="openCloseMenu()">
+				<img src="Burger_1.png" id="icona-home">
+			</div>
+			<div id="main-menu">
+				<p class="career-button-home-label">Work</p>
+				<p class="career-button-home-label">About</p>
+				<p class="career-button-home-label">Illustration</p>
 			</div>
 		</a>
+
 
 	</div>
 
@@ -135,6 +140,23 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	var menuActivated = false;
+
+	function openCloseMenu() {
+		if(menuActivated == false){
+			menuActivated = true;
+			document.getElementById("icona-home").src = "Burger_2.png";
+			document.getElementById("main-menu").style.display = "block";
+		}
+		else {
+			menuActivated = false;
+			document.getElementById("icona-home").src = "Burger_1.png";
+			document.getElementById("main-menu").style.display = "none";
+		}
+	}
+</script>
 
 </html>
 

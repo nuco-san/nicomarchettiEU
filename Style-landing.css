@@ -160,12 +160,10 @@ img {
 	box-shadow: 5px 8px 8px #0006;
 }
 
-.career-button-home {
-	position: absolute;
-	top: 6rem;
-	right: 10rem;
-	width: 6rem;
-	text-align: center;
+.menu-button-home {
+	width: 4rem;
+	float: right;
+	cursor: pointer;
 }
 
 .career-about-me {
@@ -318,6 +316,20 @@ img {
 	margin-top: 1rem;
 	text-decoration: underline;
 }
+
+
+#main-menu {
+	text-align: right;
+	display: none;
+}
+
+#main-menu-container {
+	position: absolute;
+	top: 6rem;
+	right: 10rem;
+	text-align: right;
+}
+
 
 .career-text {
 	font-family: font-testi;
