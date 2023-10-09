@@ -8,6 +8,7 @@
 	<meta charset="utf-8">
 	<title>Nicolò</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/mainMenu.js"></script>
 </head>
 
 <body id="body">
@@ -35,16 +36,23 @@
 		</div>
 
 
-		<a id="main-menu-container">
-			<div class="menu-button-home" onclick="openCloseMenu()">
-				<img src="Burger_1.png" id="icona-home">
-			</div>
+		<div class="menu-button-home" onclick="openCloseMenu()">
+			<img src="/Burger_1.png" id="icona-home">
+		</div>
+
+		<div id="main-menu-container">
 			<div id="main-menu">
-				<p class="main-menu-entry">Work</p>
-				<p class="main-menu-entry">About</p>
-				<p class="main-menu-entry">Illustration</p>
+				<a href="/">
+					<p class="main-menu-entry">Work</p>
+				</a>
+				<a href="/career">
+					<p class="main-menu-entry">About</p>
+				</a>
+				<a href="/illustration">
+					<p class="main-menu-entry">Illustration</p>
+				</a>
 			</div>
-		</a>
+		</div>
 
 
 	</div>
@@ -140,27 +148,6 @@
 		</div>
 	</div>
 </body>
-
-<script>
-	var menuActivated = false;
-
-	function openCloseMenu() {
-		if(menuActivated == false){
-			menuActivated = true;
-			document.getElementById("icona-home").src = "Burger_2.png";
-			document.getElementById("main-menu").style.display = "block";
-			document.getElementById("main-menu-container").style.boxShadow = "5px 8px 8px #0006";
-			document.getElementById("main-menu-container").style.backgroundColor = "#f5eed5";
-		}
-		else {
-			menuActivated = false;
-			document.getElementById("icona-home").src = "Burger_1.png";
-			document.getElementById("main-menu").style.display = "none";
-			document.getElementById("main-menu-container").style.boxShadow = "0px 0px 0px #0000";
-			document.getElementById("main-menu-container").style.backgroundColor = "#FAF6E7";
-		}
-	}
-</script>
 
 </html>
 
