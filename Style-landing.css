@@ -19,6 +19,18 @@
 	src: url(/fonts/Compagnon-Medium.otf);
 }
 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+	display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
+
 a {
 	text-decoration: none;
 }
@@ -27,7 +39,13 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #FAF6E7;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+	display: none;
+  }
 
 div {
 	-webkit-box-sizing: border-box;
@@ -153,7 +171,7 @@ img {
 }
 
 #icona-career {
-	width: 6rem;
+	width: 2rem;
 }
 
 #icona-career:hover {
