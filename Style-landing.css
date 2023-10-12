@@ -373,10 +373,10 @@ img {
 }
 
 .menu-hidden {
-	background-color: rgba(0,0,0,0);
 	animation-name: menu-exit;
   	animation-duration: 0.3s;
 	pointer-events: none;
+	opacity: 0;
 }
 
 
@@ -385,6 +385,7 @@ img {
 	animation-name: menu-enter;
   	animation-duration: 0.3s;
 	pointer-events: all;
+	opacity: 1;
 }
 
 
