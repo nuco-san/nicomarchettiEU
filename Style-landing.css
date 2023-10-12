@@ -352,7 +352,6 @@ img {
 }
 
 #main-menu-container {
-	display: none;
 	position: absolute;
 	z-index: 100;
 	top: 0;
@@ -360,6 +359,32 @@ img {
 	width: 100%;
 	height: 100%;
 	text-align: center;
+}
+
+
+@keyframes menu-enter {
+	from {opacity: 0;}
+  	to {opacity: 1;}
+}
+
+@keyframes menu-exit {
+	from {opacity: 1;}
+  	to {opacity: 0;}
+}
+
+.menu-hidden {
+	background-color: rgba(0,0,0,0);
+	animation-name: menu-exit;
+  	animation-duration: 0.3s;
+	pointer-events: none;
+}
+
+
+.menu-shown {
+	background-color: #de4053;
+	animation-name: menu-enter;
+  	animation-duration: 0.3s;
+	pointer-events: all;
 }
 
 
