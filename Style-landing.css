@@ -94,11 +94,12 @@ img {
 
 
 #home-sopra {
-	padding: 2rem 5rem 2rem 5rem;
+	padding: 10rem 5rem 2rem 5rem;
+	height: 85vh;
 }
 
 #home-sopra-sx {
-	width: 55%;
+	width: 70%;
 	text-align: left;
 	display: inline-block;
 }
@@ -444,7 +445,8 @@ img {
 	}
 
 	#home-sopra {
-		padding: 2rem 3rem 2rem 3rem;
+		padding: 5rem 3rem 2rem 3rem;
+		height: 70vh;
 	}
 
 	#home-sotto {
@@ -459,6 +461,12 @@ img {
 	#footer {
 		padding: 2rem 3rem 2rem 3rem;
 	}
+
+
+	.career-photo-container {
+		width: 45%;
+	} 
+
 }
 
 @media (max-width: 1000px) {
@@ -483,6 +491,11 @@ img {
 	.nico-descrizione {
 		font-size: 1.4rem;
 		line-height: 1.7rem;
+	}
+
+	#home-sopra {
+		padding: 2rem 3rem 2rem 3rem;
+		height: 55vh;
 	}
 
 	#home-sopra-sx {
@@ -516,9 +529,9 @@ img {
 @media (max-width: 500px) {
 
 	.nico {
-		font-size: 4rem;
-		line-height: 4rem;
-		margin-bottom: 1rem;
+		font-size: 5rem;
+		line-height: 5rem;
+		margin-bottom: 1.3rem;
 	}
 
 	.career-button-home {
@@ -531,8 +544,8 @@ img {
 	}
 
 	.nico-descrizione {
-		font-size: 1.2rem;
-		line-height: 1.4rem;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
 	}
 
 	#home-sopra {
@@ -593,8 +606,13 @@ img {
 
 
 	.career-photo-container {
-		display: none;
+		width: 100%;
+	} 
+
+	.career-photo {
+		width: 100%;
 	}
+	
 
 	.career-aboutme-text-container{
 		width: 100%;
