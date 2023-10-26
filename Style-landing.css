@@ -495,7 +495,7 @@ img {
 
 	#home-sopra {
 		padding: 2rem 3rem 2rem 3rem;
-		height: 55vh;
+		height: 100%;
 	}
 
 	#home-sopra-sx {
@@ -573,7 +573,7 @@ img {
 	}
 
 	.icona-career-container {
-		width: 40%;
+		width: 33%;
 	}
 
 	.icona-career {
@@ -611,6 +611,7 @@ img {
 
 	.career-photo {
 		width: 100%;
+		margin-bottom: 2rem;
 	}
 	
 
