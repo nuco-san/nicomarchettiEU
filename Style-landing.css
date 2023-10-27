@@ -99,7 +99,7 @@ img {
 }
 
 #home-sopra-sx {
-	width: 70%;
+	width: 40%;
 	text-align: left;
 	display: inline-block;
 }
@@ -291,8 +291,8 @@ img {
 .nico-descrizione {
 	font-family: font-testi;
 	font-size: 1.6rem;
-	line-height: 1.9rem;
-	margin-bottom: 1rem;
+	line-height: 2.1rem;
+	margin-bottom: 3rem;
 }
 
 .project-type-title {
@@ -413,6 +413,7 @@ img {
 	font-family: font-testi-bold;
 	color: black;
 	text-decoration: underline;
+	white-space: nowrap;
 }
 
 .pistachio-onwhite:hover {
