@@ -91,7 +91,7 @@ img {
 
 #head-sotto {
 	width: 100%;
-	padding: 5rem 0 0 0;
+	padding: 3rem 0 0 0;
 	margin-bottom: 2rem;
 }
 
@@ -221,8 +221,8 @@ img {
 
 .testo-gigante {
 	font-family: font-titolo; 
-	font-size: 7rem;
-	line-height: 7rem;
+	font-size: 5rem;
+	line-height: 5rem;
 	margin: 0;
 	color: black;
 	text-decoration-color: black;
