@@ -1,22 +1,27 @@
 @font-face {
 	font-family: font-titolo;
-	src: url(/fonts/ApfelGrotezk-Regular.otf);
+	src: url(/fonts/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+	font-family: font-titoletti;
+	src: url(/fonts/SpaceGrotesk-Medium.ttf)
 }
 
 
 @font-face {
 	font-family: font-testi;
-	src: url(/fonts/ZillaSlab-Regular.ttf);
+	src: url(/fonts/Karla-Regular.ttf);
 }
 
 @font-face {
 	font-family: font-testi-bold;
-	src: url(/fonts/ZillaSlab-SemiBold.ttf);
+	src: url(/fonts/Karla-Bold.ttf);
 }
 
 @font-face {
 	font-family: font-corsivo;
-	src: url(/fonts/Compagnon-Medium.otf);
+	src: url(/fonts/SpaceGrotesk-Medium.ttf);
 }
 
 
@@ -38,7 +43,6 @@ a {
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: #FAF6E7;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;
 }
@@ -53,10 +57,6 @@ div {
 	-moz-box-sizing: border-box;
 	/* Firefox, other Gecko */
 	box-sizing: border-box;
-}
-
-img {
-	border-radius: 10px;
 }
 
 .red {
@@ -89,13 +89,62 @@ img {
 	color: white;
 }
 
+p {
+	color: #0c1855;
+	color: black;
+}
+
+#home-header {
+	padding: 1rem 4rem;
+	width: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100;
+	background-color: white;
+}
+
+#home-header-left {
+	display: inline-block;
+	float: left;
+}
+
+#home-header-right {
+	display: inline-block;
+	float: right;
+}
+
+.home-header-link {
+	box-sizing: border-box;
+	font-family: font-titoletti;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	color: black;
+}
+
+.home-header-link:hover {
+	color: #fb0066;
+}
+
+.home-header-link + .home-header-link {
+	margin-left: 2rem;
+}
+
+
+#home-sotto {
+	padding: 1rem 4rem 2rem 4rem;
+	text-align: left;
+	vertical-align: top;
+}
+
+
+
 
 
 
 
 #home-sopra {
-	padding: 8rem 5rem 2rem 5rem;
-	height: 85vh;
+	padding: 8rem 4rem 4rem 4rem;
 }
 
 #home-sopra-sx {
@@ -110,29 +159,41 @@ img {
 	padding: 1rem 0 0 4rem;
 }
 
-#home-sotto {
-	padding: 2.5rem 5rem 2rem 5rem;
-	text-align: left;
-	vertical-align: top;
-	background-color: #f5eed5;
-}
+
 
 .link-home {
-	width: 31%;
+	width: 49%;
 	display: inline-block;
 	position: relative;
 	text-align: left;
-	margin: 0.8rem 0.5rem 0.8rem 0.5rem;
+	margin: 0.2rem 0.2rem 0.2rem 0.2rem;
 	overflow: hidden;
 }
 
+@keyframes linkh-home-radius {
+	from {border-radius: 0px;}
+  	to {border-radius: 50px;}
+}
+
+@keyframes linkh-home-no-radius {
+	from {border-radius: 50px;}
+  	to {border-radius: 0px;}
+}
+
 .link-home-img {
-	width: 96%;
+	width: 100%;
+	box-sizing: border-box;
+	animation-name: linkh-home-no-radius;
+  	animation-duration: 0.2s;
+	border-radius: 0px;
 }
 
 .link-home-img:hover {
-	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.45);
+	animation-name: linkh-home-radius;
+  	animation-duration: 0.2s;
+	border-radius: 50px;
 }
+
 
 #career-body {
 	padding: 0px;
@@ -187,6 +248,7 @@ img {
 	z-index: 101;
 	float: right;
 	cursor: pointer;
+	display: none;
 }
 
 .career-about-me {
@@ -224,7 +286,6 @@ img {
 }
 
 #footer {
-	background-color: #FAF6E7;
 	width: 100%;
 	padding: 3rem 6rem 3rem 6rem;
 	vertical-align: top;
@@ -240,7 +301,7 @@ img {
 }
 
 .nico-btn {
-	background-color: #de4053;
+	background-color: #fb0066;
 	border-radius: 10px;
 	padding: 1rem;
 	color: white;
@@ -251,31 +312,15 @@ img {
 }
 
 .nico-btn:hover {
-	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4); */
 	cursor: pointer;
 }
 
-.nico-btn {
-	background-color: #de4053;
-	border-radius: 10px;
-	padding: 1rem;
-	color: white;
-	border: none;
-	font-family: font-corsivo;
-	font-size: 1.3rem;
-	line-height: 1.4rem;
-}
-
-.nico-btn:hover {
-	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
-	cursor: pointer;
-}
 
 .nico {
 	font-family: font-titolo;
-	font-size: 9rem;
-	color: black;
-	line-height: 8rem;
+	font-size: 6rem;
+	line-height: 5.5rem;
 	margin-bottom: 3rem;
 	margin-top: 0rem;
 }
@@ -292,8 +337,17 @@ img {
 	font-family: font-testi;
 	font-size: 1.6rem;
 	line-height: 2.1rem;
-	margin-bottom: 3rem;
+	margin: 0 0 1rem 0;
 }
+
+.nico-descrizione-small {
+	font-family: font-testi;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+	margin: 0 0 2rem 0;
+}
+
+
 
 .project-type-title {
 	font-family: font-testi-bold;
@@ -309,15 +363,15 @@ img {
 	font-family: font-titolo;
 	font-size: 1.5rem;
 	line-height: 1.6rem;
-	color: black;
 	margin-bottom: 0;
+	color: #fb0066;
 }
 
 .link-home-genre {
 	font-family: font-corsivo;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
-	color: #de4053;
+	color: black;
 	margin-top: 0;
 }
 
@@ -354,6 +408,12 @@ img {
 }
 
 
+
+.illustration-img {
+	width: 300px;
+}
+
+
 @keyframes menu-enter {
 	from {opacity: 0;}
   	to {opacity: 1;}
@@ -373,7 +433,7 @@ img {
 
 
 .menu-shown {
-	background-color: #de4053;
+	background-color: #3436b6;
 	animation-name: menu-enter;
   	animation-duration: 0.3s;
 	pointer-events: all;
@@ -417,7 +477,7 @@ img {
 }
 
 .pistachio-onwhite:hover {
-	color: #de4053;
+	color: #fb0066;
 }
 
 .pistachio:hover {
