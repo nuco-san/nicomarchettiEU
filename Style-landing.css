@@ -1,17 +1,23 @@
 @font-face {
 	font-family: font-titolo;
-	src: url(/fonts/SpaceGrotesk-Bold.ttf);
+	src: url(/fonts/Karla-Bold.ttf);
 }
 
 @font-face {
 	font-family: font-titoletti;
-	src: url(/fonts/SpaceGrotesk-Medium.ttf)
+	src: url(/fonts/Karla-Regular.ttf)
 }
 
 
 @font-face {
 	font-family: font-testi;
 	src: url(/fonts/Karla-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: font-descrizione;
+	src: url(/fonts/SpaceGrotesk-Regular.ttf)
 }
 
 @font-face {
@@ -26,11 +32,9 @@
 .example::-webkit-scrollbar {
 	display: none;
   }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .example {
+    .example {
 	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	scrollbar-width: none;
   }
 
 a {
@@ -117,10 +121,12 @@ p {
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	color: black;
+	vertical-align: center;
 }
 
 .home-header-link:hover {
-	color: #fb0066;
+	background-color: rgb(238, 249, 135);
+
 }
 
 .home-header-link + .home-header-link {
@@ -130,7 +136,7 @@ p {
 
 #home-sotto {
 	padding: 2rem 2rem 2rem 2rem;
-	text-align: center;
+	text-align: left;
 	vertical-align: top;
 }
 
@@ -141,39 +147,40 @@ p {
 
 
 #home-sopra {
-	padding: 8rem 2rem 4rem 2rem;
+	padding: 8rem 2rem 2rem 2rem;
 }
 
 #home-sopra-sx {
-	width: 100%;
-	text-align: center;
+	width: 70%;
+	text-align: left;
 	display: inline-block;
+	margin-bottom: 1rem;
 }
 
 #home-sopra-dx {
 	display: inline-block;
 	vertical-align: top;
-	padding: 1rem 0 0 4rem;
+	float: right;
 }
 
 
 .link-home {
-	width: 49%;
+	width: 32.5%;
 	display: inline-block;
 	position: relative;
 	text-align: left;
-	margin: 0rem 0.5rem 3rem 0rem;
+	margin: 0rem 0.6rem 1.5rem 0rem;
 	overflow: hidden;
 }
 
 @keyframes linkh-home-radius {
-	from {border-radius: 0px;}
+	from {border-radius: 10px;}
   	to {border-radius: 50px;}
 }
 
 @keyframes linkh-home-no-radius {
 	from {border-radius: 50px;}
-  	to {border-radius: 0px;}
+  	to {border-radius: 10px;}
 }
 
 .link-home-img {
@@ -182,6 +189,7 @@ p {
 	animation-name: linkh-home-no-radius;
   	animation-duration: 0.2s;
 	border-radius: 0px;
+	border-radius: 10px;
 }
 
 .link-home-img:hover {
@@ -302,14 +310,15 @@ p {
 	padding: 1rem;
 	color: white;
 	border: none;
-	font-family: font-titolo;
-	font-size: 1.3rem;
-	line-height: 1.4rem;
+	font-family: font-titoletti;
+	font-size: 2rem;
+	line-height: 1.6rem;
 }
 
 .nico-btn:hover {
 	/* box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4); */
 	cursor: pointer;
+	background-color: black;
 }
 
 
@@ -331,16 +340,26 @@ p {
 
 .nico-descrizione {
 	font-family: font-testi;
-	font-size: 1.6rem;
-	line-height: 2.1rem;
-	margin: 0 0 1rem 0;
+	font-size: 2.8rem;
+	line-height: 3.2rem;
+	margin: 0 0 2rem 0;
+	
+}
+
+
+.nico-descrizione-bold {
+	background-color: rgb(238, 249, 135);
+	color: black;
+}
+
+.nico-descrizione-bold:hover {
+	text-decoration: underline;
 }
 
 .nico-descrizione-small {
 	font-family: font-testi;
-	font-size: 1.3rem;
-	line-height: 1.7rem;
-	margin: 0 0 2rem 0;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 
 
@@ -356,9 +375,9 @@ p {
 }
 
 .link-home-text {
-	font-family: font-titolo;
-	font-size: 1.5rem;
-	line-height: 1.6rem;
+	font-family: font-titoletti;
+	font-size: 1.7rem;
+	line-height: 1.9rem;
 	margin: 1rem 0 0.2rem 0;
 }
 
@@ -366,7 +385,6 @@ p {
 	font-family: font-testi;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
-	color: #fb0066;
 	margin-top: 0;
 }
 

@@ -1,3 +1,39 @@
+@font-face {
+	font-family: font-titolo;
+	src: url(/fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+	font-family: font-titoletti;
+	src: url(/fonts/Karla-Regular.ttf)
+}
+
+
+@font-face {
+	font-family: font-testi;
+	src: url(/fonts/Karla-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: font-descrizione;
+	src: url(/fonts/SpaceGrotesk-Regular.ttf)
+}
+
+@font-face {
+	font-family: font-testi-bold;
+	src: url(/fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+	font-family: font-mono;
+	src: url(/fonts/IBMPlexMono-Light.otf);
+}
+
+
+
+
+
 body {
 	margin: 0px;
 	-ms-overflow-style: none;  /* IE and Edge */
@@ -26,41 +62,12 @@ p {
   }
 
 
-  @font-face {
-	font-family: font-titolo;
-	src: url(/fonts/SpaceGrotesk-Bold.ttf);
-}
 
-@font-face {
-	font-family: font-titoletti;
-	src: url(/fonts/SpaceGrotesk-Medium.ttf)
-}
-
-
-@font-face {
-	font-family: font-testi;
-	src: url(/fonts/Karla-Regular.ttf);
-}
-
-@font-face {
-	font-family: font-testi-bold;
-	src: url(/fonts/Karla-Bold.ttf);
-}
-
-@font-face {
-	font-family: font-corsivo;
-	src: url(/fonts/SpaceGrotesk-Medium.ttf);
-}
-
-@font-face {
-	font-family: font-mono;
-	src: url(/fonts/Compagnon-Roman.otf)
-}
 
 
 #home-header {
 	box-sizing: border-box;
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	width: 100%;
 	position: fixed;
 	top:0;
@@ -81,7 +88,7 @@ p {
 }
 
 .home-header-link {
-	font-family: font-titolo;
+	font-family: font-titoletti;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	color: black;
@@ -138,8 +145,8 @@ p {
 
 .project-whatidid-text{
 	font-family: font-mono;
-	font-size: 1.1rem;
-	line-height: 1.5rem;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
 }
 
 #main-images {
