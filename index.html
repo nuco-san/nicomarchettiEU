@@ -18,11 +18,23 @@
 			<a class="home-header-link"  href="/" >nicolò marchetti</a>
 		</div>
 		<div id="home-header-right">
-			<a class="home-header-link" href="/">work</a>
-			<a class="home-header-link" href="/illustration/">illustration</a>
-			<a class="home-header-link" href="/career/">about</a>
+			<a class="home-header-link mobile-disappear" href="/">work</a>
+			<a class="home-header-link mobile-disappear" href="/illustration/">illustration</a>
+			<a class="home-header-link mobile-disappear" href="/career/">about</a>
+			<img src="Burger_1.png" onclick="openCloseMenu()" class="burger-icon mobile-appear">
 		</div>
 	</div>
+
+	<div id="mobile-main-menu">
+		<div id="mobile-menu-entries-container">
+			<a href="/" class="mobile-menu-link">work</a>
+			<a class="mobile-menu-link" href="/illustration/">illustration</a>
+			<a class="mobile-menu-link" href="/career/">about</a>
+		</div>
+		<img src="Burger_2.png"  onclick="openCloseMenu()" class="menu-close-icon">
+	</div>
+
+
 
 	<div id="home-sopra">
 		<div id="home-sopra-sx">
@@ -30,7 +42,7 @@
 				Visual designer focused on identities, UIs, <br>narrative & interaction.
 			</p>
 			<p class="nico-descrizione">
-				Currently working at <a target="_blank" class="nico-descrizione-bold " href="https://wearemuesli.it/">We Are Muesli</a> but available
+				Currently working at <a target="_blank" class="external-link" href="https://wearemuesli.it/">We Are Muesli</a> but available
 				<br>for freelance work.
 			</p>
 		</div>
@@ -39,7 +51,7 @@
 		</p>
 		<p class="nico-descrizione-small">
 			→
-			<a class="nico-descrizione-bold " target="_blank" href="https://www.linkedin.com/in/nicolò-marchetti">
+			<a class="external-link" target="_blank" href="https://www.linkedin.com/in/nicolò-marchetti">
 				Linkedin
 			</a>
 		</p>
@@ -95,11 +107,13 @@
 			<p class="link-home-genre">Branding</p>
 		</div>
 
-	</div>
-
-	<div id="home-sotto">
-		<p class="project-type-title">Personal projects</p>
-
+		<div class="link-home">
+			<a href="/projects/Roviza/">
+				<img class="link-home-img" src="/projects/Roviza/roviza_copertina.png">
+			</a>
+			<p class="link-home-text">Roviza</p>
+			<p class="link-home-genre">Branding</p>
+		</div>
 
 		<div class="link-home">
 			<a href="/projects/Gincana/">
@@ -111,27 +125,13 @@
 
 	</div>
 
-
 	<div id="footer">
-		<div id="footer-contacts-container">
-			<p class="footer-contact-title">Contacts</p>
-			<a href="mailto:nicolo.marchetti@live.com" class="footer-contact-link pistachio-onwhite">Email</a><br>
-			<a href="https://www.linkedin.com/in/nicolò-marchetti" target="_blank"
-				class="footer-contact-link pistachio-onwhite">Linkedin</a><br>
-			<a href="https://villadelfina.itch.io/" target="_blank"
-				class="footer-contact-link pistachio-onwhite">Itch.io</a>
-		</div>
 		<div id="home-credits">
-			<p class="footer-contact-title">Designed and coded by Nicolò</p>
+			<p class="footer-contact-title">Coded with ♥ by Nicolò</p>
 			<p class="home-credits-text">
-				Typefaces used: <a href="http://collletttivo.it/" target="_blank" class="pistachio-onwhite">Apfel
-					Grotezk</a> by Luigi Gorlero,
-				<a href="https://velvetyne.fr/fonts/compagnon/" target="_blank" class="pistachio-onwhite">Compagnon</a>
-				by
-				J. Duhé, L. Pradine,
-				V. Papon, C. Lozano, S. Riollier, <a href="https://www.fontsquirrel.com/fonts/zilla-slab"
-					target="_blank" class="pistachio-onwhite">Zilla Slab</a>
-				by Typotheque.
+				Typefaces used: <a href="https://fonts.google.com/specimen/Karla" target="_blank" class="external-link">Karla</a> by Johnny Pinhorn,
+				<a href="https://fonts.google.com/specimen/IBM+Plex+Mono" target="_blank" class="external-link">IBM Plex Mono</a>
+				by Mike Abbink, Bold Monday.
 			</p>
 		</div>
 	</div>

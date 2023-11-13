@@ -25,6 +25,16 @@
 	src: url(/fonts/Karla-Bold.ttf);
 }
 
+@font-face {
+	font-family: font-testi-italic;
+	src: url(/fonts/Karla-Italic.ttf)
+}
+
+
+:root {
+	--yellow: rgb(238, 249, 135);
+	--gold: rgb(201, 137, 18);
+  }  
 
 
 
@@ -125,13 +135,74 @@ p {
 }
 
 .home-header-link:hover {
-	background-color: rgb(238, 249, 135);
+	background-color: var(--yellow);
 
 }
 
 .home-header-link + .home-header-link {
 	margin-left: 2rem;
 }
+
+.burger-icon {
+	width: 30px;
+	cursor: pointer;
+}
+
+
+
+#mobile-main-menu {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	z-index: 200;
+	text-align: center;
+	background-color: white;
+}
+
+
+#mobile-menu-entries-container {
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mobile-menu-link {
+	box-sizing: border-box;
+	font-family: font-titoletti;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+	color: black;
+	background-color: var(--yellow);
+}
+
+
+.menu-close-icon {
+	width: 30px;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #home-sotto {
@@ -244,17 +315,6 @@ p {
 	box-shadow: 5px 8px 8px #0006;
 }
 
-.menu-button-home {
-	width: 2.5rem;
-	position: absolute;
-	top: 4rem;
-	right: 4rem;
-	z-index: 101;
-	float: right;
-	cursor: pointer;
-	display: none;
-}
-
 .career-about-me {
 	width: 100%;
 	padding: 3rem 3rem 6rem 3rem;
@@ -291,7 +351,7 @@ p {
 
 #footer {
 	width: 100%;
-	padding: 3rem 6rem 3rem 6rem;
+	padding: 2rem;
 	vertical-align: top;
 }
 
@@ -305,7 +365,6 @@ p {
 }
 
 .nico-btn {
-	background-color: #fb0066;
 	border-radius: 10px;
 	padding: 1rem;
 	color: white;
@@ -347,14 +406,16 @@ p {
 }
 
 
-.nico-descrizione-bold {
-	background-color: rgb(238, 249, 135);
+.external-link {
+	background-color: var(--yellow);
 	color: black;
-}
-
-.nico-descrizione-bold:hover {
 	text-decoration: underline;
 }
+
+.external-link:hover {
+	color: var(--gold);
+}
+
 
 .nico-descrizione-small {
 	font-family: font-testi;
@@ -386,6 +447,7 @@ p {
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 	margin-top: 0;
+	color: var(--gold);
 }
 
 .main-menu-entry {
@@ -446,7 +508,6 @@ p {
 
 
 .menu-shown {
-	background-color: #3436b6;
 	animation-name: menu-enter;
   	animation-duration: 0.3s;
 	pointer-events: all;
@@ -475,6 +536,7 @@ p {
 .footer-contact-title {
 	font-family: font-testi;
 	font-size: 1.3rem;
+	margin-bottom: 0.7rem;
 }
 
 .pistachio {
@@ -600,7 +662,23 @@ p {
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+
+	.mobile-appear {
+		display: block;
+	}
+
+	.mobile-disappear {
+		display: none;
+	}
+
+	#home-header {
+		padding: 1rem;
+	}
+	
+
+
+
 
 	.nico {
 		font-size: 5rem;
@@ -608,22 +686,13 @@ p {
 		margin-bottom: 1.3rem;
 	}
 
-	.career-button-home {
-		right: 1.5rem;
-		width: 3rem;
-	}
-
-	.career-button-home {
-		display: none;
-	}
-
 	.nico-descrizione {
-		font-size: 1.4rem;
-		line-height: 1.7rem;
+		font-size: 2rem;
+		line-height: 2.7rem;
 	}
 
 	#home-sopra {
-		padding: 1rem 1rem 1rem 1rem;
+		padding: 6rem 1rem 1rem 1rem;
 	}
 
 	#home-sotto {
