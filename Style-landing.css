@@ -146,6 +146,8 @@ p {
 .burger-icon {
 	width: 30px;
 	cursor: pointer;
+	display: none;
+
 }
 
 
@@ -159,6 +161,8 @@ p {
 	z-index: 200;
 	text-align: center;
 	background-color: white;
+	display: none;
+
 }
 
 
@@ -410,6 +414,7 @@ p {
 	background-color: var(--yellow);
 	color: black;
 	text-decoration: underline;
+	white-space: nowrap;
 }
 
 .external-link:hover {
