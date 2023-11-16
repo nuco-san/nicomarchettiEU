@@ -279,14 +279,22 @@ p {
 	margin: 0px;
 }
 
+.career-title {
+	font-family: font-testi;
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	line-height: 3rem;
+}
+
 .career-photo-container {
-	width: 35%;
+	width: 40%;
 	display: inline-block;
 	float: left;
 }
 
 .career-photo {
-	width: 80%;
+	width: 90%;
+	border-radius: 10px;
 }
 
 .career-aboutme-text-container {
@@ -294,8 +302,9 @@ p {
 	display: inline-block;
 }
 
-.career-longtext-container {
+.career-text-section {
 	width: 80%;
+	margin-bottom: 3rem;
 }
 
 .career-header {
@@ -321,31 +330,9 @@ p {
 
 .career-about-me {
 	width: 100%;
-	padding: 3rem 3rem 6rem 3rem;
-	background-color: #f5eed5;
+	padding: 8rem 2rem 6rem 2rem;
 }
 
-#icona-home {
-	image-rendering: optimizeSpeed;
-	/* STOP SMOOTHING, GIVE ME SPEED  */
-	image-rendering: -moz-crisp-edges;
-	/* Firefox                        */
-	image-rendering: -o-crisp-edges;
-	/* Opera                          */
-	image-rendering: -webkit-optimize-contrast;
-	/* Chrome (and eventually Safari) */
-	image-rendering: pixelated;
-	/* Chrome */
-	image-rendering: optimize-contrast;
-	/* CSS3 Proposed                  */
-	-ms-interpolation-mode: nearest-neighbor;
-	width: 100%;
-}
-
-
-#icona-home:hover {
-	box-shadow: 5px 8px 8px #0006;
-}
 
 #home-credits {
 	width: 35%;
@@ -418,6 +405,17 @@ p {
 }
 
 .external-link:hover {
+	color: var(--gold);
+}
+
+
+.simpler-link {
+	color: black;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.simpler-link:hover {
 	color: var(--gold);
 }
 
@@ -530,7 +528,7 @@ p {
 	font-family: font-testi;
 	font-size: 2.1rem;
 	line-height: 2.6rem;
-	margin: 0 0 3rem 0;
+	margin: 0 0 1rem 0;
 }
 
 .home-credits-text {
@@ -543,28 +541,6 @@ p {
 	font-size: 1.3rem;
 	margin-bottom: 0.7rem;
 }
-
-.pistachio {
-	font-family: font-testi-bold;
-	color: white;
-}
-
-.pistachio-onwhite {
-	font-family: font-testi-bold;
-	color: black;
-	text-decoration: underline;
-	white-space: nowrap;
-}
-
-.pistachio-onwhite:hover {
-	color: #fb0066;
-}
-
-.pistachio:hover {
-	color: #de4053;
-}
-
-
 
 
 @media (max-width: 1400px) {
