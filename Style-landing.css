@@ -546,14 +546,13 @@ p {
 }
 
 
-@media (max-width: 1400px) {
-
-	.career-aboutme-text-container{
-		width: 65%;
-	}
-}
 
 @media (max-width: 1200px) {
+
+
+	#home-sopra-sx {
+		width: 85%;
+	}
 
 	.career-longtext-container {
 		width: 100%;
@@ -564,13 +563,9 @@ p {
 		line-height: 6rem;
 	}
 
-	#home-sopra {
-		padding: 5rem 3rem 2rem 3rem;
-		height: 70vh;
-	}
 
 	#home-sotto {
-		padding: 2rem 3rem 2rem 3rem;
+		grid-template-columns: auto auto;
 	}
 
 	.career-button-home {
@@ -589,37 +584,21 @@ p {
 
 }
 
-@media (max-width: 1000px) {
-
-	#home-sopra-sx {
-		width: 75%;
-	}
-
-}
 
 @media (max-width: 800px) {
-
-	.link-home {
-		width: 45%;
-	}
 
 	.nico {
 		font-size: 5rem;
 		line-height: 4rem;
 	}
 
-	.nico-descrizione {
-		font-size: 1.4rem;
-		line-height: 1.7rem;
-	}
-
-	#home-sopra {
-		padding: 2rem 3rem 2rem 3rem;
-		height: 100%;
-	}
-
 	#home-sopra-sx {
-		width: 85%;
+		width: 100%;
+	}
+
+	.nico-descrizione {
+		font-size: 2.2rem;
+		line-height: 2.7rem;
 	}
 
 	.career-button-home {
@@ -681,6 +660,7 @@ p {
 
 	#home-sotto {
 		padding: 1rem 1rem 1rem 1rem;
+		grid-template-columns: auto ;
 	}
 
 	.link-home {
