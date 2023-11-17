@@ -213,7 +213,19 @@ p {
 	padding: 2rem 2rem 2rem 2rem;
 	text-align: left;
 	vertical-align: top;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 20px;
+	row-gap: 50px;
 }
+
+
+.link-home {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
 
 
 
@@ -238,15 +250,6 @@ p {
 	float: right;
 }
 
-
-.link-home {
-	width: 32.5%;
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	margin: 0rem 0.6rem 1.5rem 0rem;
-	overflow: hidden;
-}
 
 @keyframes linkh-home-radius {
 	from {border-radius: 10px;}
@@ -330,7 +333,7 @@ p {
 
 .career-about-me {
 	width: 100%;
-	padding: 8rem 2rem 6rem 2rem;
+	padding: 8rem 2rem 8rem 2rem;
 }
 
 
@@ -717,8 +720,8 @@ p {
 	}
 
 	.career-text-big {
-		font-size: 1.5em;
-		line-height: 1.9rem;
+		font-size: 2.5em;
+		line-height: 2.6rem;
 		margin: 0 0 2rem 0;
 	}
 
@@ -728,6 +731,10 @@ p {
 		margin: 0 0 2rem 0;
 	}
 
+
+	.career-text-section {
+		width: 90%;
+	}
 
 	.career-photo-container {
 		width: 100%;
