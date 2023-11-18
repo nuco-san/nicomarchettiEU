@@ -316,7 +316,6 @@ p {
 
 .previousnext-button {
 	color: black;
-	text-decoration: underline;
 	font-family: font-testi;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
@@ -403,6 +402,33 @@ p {
 	#home-header {
 		padding: 1rem;
 	}
+
+	#main-content {
+		padding: 1rem ;
+	}
+
+	#main-text-container {
+		padding: 0;
+		grid-template-columns: auto;
+	}
+
+	.text-layout-0 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.image-layout-1 {
+		grid-template-columns:  auto;
+	}
+	
+	.image-layout-2 {
+		grid-template-columns: auto;
+	}
+
+	#footer {
+		display: none;
+	}
+	
 }
 
 
