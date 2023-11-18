@@ -33,7 +33,15 @@
 
 
 
+
+
+
 /* ___________GENERAL */
+
+:root {
+	--yellow: rgb(238, 249, 135);
+	--gold: rgb(201, 137, 18);
+}  
 
 body {
 	margin: 0px;
@@ -47,6 +55,7 @@ a {
 p {
 	margin: 0;
 }
+
 
 
 
@@ -88,6 +97,11 @@ p {
 .home-header-link + .home-header-link {
 	margin-left: 2rem;
 }
+
+.home-header-link:hover {
+	background-color: var(--yellow);
+}
+
 
 .burger-icon {
 	width: 30px;
@@ -310,8 +324,8 @@ p {
 	
 }
 
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
 
 	.mobile-appear {
 		display: block;
@@ -321,6 +335,9 @@ p {
 		display: none;
 	}
 
+	#home-header {
+		padding: 1rem;
+	}
 }
 
 
