@@ -582,6 +582,10 @@ p {
 		width: 45%;
 	} 
 
+	.career-text-section {
+		width: 90%;
+	}
+
 }
 
 
@@ -620,6 +624,22 @@ p {
 		top: 2rem;
 		right: 2rem;
 	}
+
+
+	.career-photo-container {
+		width: 100%;
+	} 
+
+	.career-photo {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	
+
+	.career-aboutme-text-container{
+		width: 100%;
+	}
+
 
 }
 
@@ -706,29 +726,14 @@ p {
 	}
 
 	.career-text {
-		font-size: 1.2em;
-		line-height: 1.5rem;
+		font-size: 1.4em;
+		line-height: 1.7rem;
 		margin: 0 0 2rem 0;
 	}
 
 
-	.career-text-section {
-		width: 90%;
-	}
 
-	.career-photo-container {
-		width: 100%;
-	} 
 
-	.career-photo {
-		width: 100%;
-		margin-bottom: 2rem;
-	}
-	
-
-	.career-aboutme-text-container{
-		width: 100%;
-	}
 
 	#footer {
 		padding: 2rem 1rem 2rem 1rem;
