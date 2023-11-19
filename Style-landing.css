@@ -473,6 +473,50 @@ p {
 
 
 
+/* ___________ILLUSTRATION */
+
+
+#illustration-body {
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 30px;
+	row-gap: 30px;
+	background-color: #eeeeee;
+}
+
+.illustration-image {
+	height: 400px;
+	display: inline-block;
+	background-size: cover;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#illustration-header {
+	padding: 8rem 2rem 2rem 2rem;
+	width: 60%;
+}
+
+.illustration-title {
+	font-family: font-titolo;
+	font-size: 3.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1200px) {
@@ -495,6 +539,10 @@ p {
 
 	.career-text-section {
 		width: 90%;
+	}
+
+	.illustration-image {
+		height: 300px;
 	}
 }
 
@@ -525,6 +573,12 @@ p {
 
 	.career-aboutme-text-container{
 		width: 100%;
+	}
+
+	#illustration-body {
+		grid-template-columns: auto auto;
+		column-gap: 15px;
+		row-gap: 15px;
 	}
 }
 
@@ -600,5 +654,14 @@ p {
 
 	#home-credits {
 		width: 100%;
+	}
+
+	#illustration-body {
+		grid-template-columns: auto;
+		row-gap: 15px;
+	}
+
+	.illustration-image {
+		height: 400px;
 	}
 }
