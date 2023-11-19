@@ -7,109 +7,125 @@
   <meta charset="utf-8">
   <title>Roviza</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/mainMenu.js"></script>
 </head>
-<body id="body"   style="background-color: #f3d119;">
+<body id="body">
 
-	<div id="head">
-		<div id="head-sx">
-			
-				
-			<div id="head-sx-luna">
-				<a href="/">
-					<img src="/icona_bianca.png" class="back-svg">
-				</a>
-				<p id="disciplina" class="titoletto-sans ">{ branding, logo design }</p>
-			</div>
-				
-			<p id="titolo-progetto" class="testo-gigante ">Roviza</p>
-			
+	<div id="home-header">
+		<div id="home-header-left">
+			<a class="home-header-link"  href="/" >nicolò marchetti</a>
 		</div>
-		
-		<div id="head-dx"> 
-		
-			<img class="immagine-titolo" src="coop_logo_b.png">
-		
+		<div id="home-header-right">
+			<a class="home-header-link mobile-disappear" href="/">work</a>
+			<a class="home-header-link mobile-disappear" href="/illustration/">illustration</a>
+			<a class="home-header-link mobile-disappear" href="/career/">about</a>
+			<img src="/Burger_1.png" onclick="openCloseMenu()" class="burger-icon mobile-appear">
 		</div>
-			
-		<div id="head-sotto">
-			
-			<div id="head-sotto-sx">
-				<div id="head-sotto-sx-testo">
-
-					<p class="testo-serif-piccolo">
-					In 2022 the Swedish e-commerce agency once known as Dahlquist became <a href="https://co-op.se/" target="_blank" class="pistachio-onwhite">CO-OP</a> and started a rebranding process. They wanted something that could
-					stand out from the rest of the digital agencies, and they asked me to design a retro-gaming inspired brand identity.
-					<br><br>The logo and the website that resulted from the collaboration dig deep into the synthwave aesthetics, and try to
-					find an alternative to the traditional corporate look.
-					</p>
-					
-				</div>
-
-			</div>
-			
-			<div id="head-sotto-dx">
-				<div id="head-sotto-dx-team"  style="background-color: #ddbf15;">
-					<p class="testo-sans-title">▶ What I did</p>
-					<p class="testo-sans">As visual design consultant, I was in charge of the art direction of the rebranding, the design of the logo and of the assets for the website.</p>
-				</div>
-				<div id="head-sotto-dx-year">
-					<p class="testo-sans">Designed in 2022.</p>
-				</div>
-			</div>
-			<div id="text-hide-gradient"></div>
-		</div>	
-
-
 	</div>
-	
-	<div id="contenitore-immagini">
 
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">Scroll down to see the project</p>
+	<div id="mobile-main-menu">
+		<div id="mobile-menu-entries-container">
+			<a href="/" class="mobile-menu-link">work</a>
+			<a class="mobile-menu-link" href="/illustration/">illustration</a>
+			<a class="mobile-menu-link" href="/career/">about</a>
 		</div>
+		<img src="/Burger_2.png"  onclick="openCloseMenu()" class="menu-close-icon mobile-appear">
+	</div>
 
-		<img class="immagini-progetto immagini-2" src="roviza_9.JPG">
-		<img class="immagini-progetto immagini-2" src="roviza_10.JPG">
-		
+	<div id="head-image-container">
+		<img id="head-image" src="roviza_1.JPG">
+	</div>
 
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">The horizontal lines that cut the logotype and the grainy pink gradient were inspired by famous 80's sci-fi movie titles (Tron, Blade Runner).</p>
+	<div id="main-content">
+		<div id="main-text-container">
+			<div class="main-text-column">
+				<p id="main-project-title">
+					Roviza
+					<br>-
+				</p>
+				<p class="project-text-medium">
+					An interactive narrative experience <br>about the sculptor's life and opus.
+				</p>
+			</div>
+			<div class="main-text-column">
+				<div id="long-text-container">
+					<p class="project-long-text">
+						A collaborative video game for teams of middle school students, 
+						Missione Pietrarubbia was designed to be the
+						main experience for the SmART schooling project of the 
+						<a href="https://www.fondazionearnaldopomodoro.it/en/event/smartschooling/" target="_blank" class="external-link">Arnaldo Pomodoro Foundation</a>.
+						
+						<br><br>
+						The students explore three fictional, psychedelic, sci-fi worlds 
+						inspired by the works and the life of Italian sculptor Arnaldo Pomodoro, 
+						trying to unlock objects that come from the personal archive of the artist.
+						The game was designed to be played in classrooms during the COVID-19 pandemic.
+					</p>
+					<p class="project-whatidid-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.<br><br>A project by We Are Müesli.
+					</p>
+				</div>
+			</div>
 		</div>
-
-		<img class="immagini-progetto immagini-1" src="roviza_5.JPG">
-
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">I also designed a monochromatic and a less detailed versions of the logo, to be used in print and in small scale use cases.</p>
+		<div id="main-images">
+			<div class="image-layout-0">
+				<img class="all-images" src="UI_set_pietrarubbia.png">
+			</div>
+			<div class="image-layout-1">
+				<img class="all-images" src="screenshot_4_pietrarubbia.jpg">
+				<div class="text-afterimage-container">
+					<p class="project-smalltitle">
+						Section title
+						<br>-
+					</p>
+					<p class="project-long-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.<br><br>A project by We Are Müesli.
+					</p>
+				</div>
+			</div>
+			<div class="image-layout-0">
+				<img class="all-images" src="screenshot_16_pietrarubbia.jpg">
+			</div>
+			<div class="text-layout-0">
+				<p class="project-smalltitle">
+					Section title
+					<br>-
+				</p>
+				<p class="project-long-text">
+					I was in charge of the design of the levels (both experiential and visual), 
+					and the UX/UI design for the game interface.
+				</p>
+			</div>
+			<div class="image-layout-2">
+				<img class="all-images" src="PIETRARUBBIA_Mockup_carte.jpg">
+				<div class="text-afterimage-container">
+					<p class="project-smalltitle">
+						Section title
+						<br>-
+					</p>
+					<p class="project-long-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.
+					</p>
+				</div>
+			</div>
+			<div class="image-layout-0">
+				<img class="all-images" src="foto-pietra.jpg">
+			</div>
+			
 		</div>
-
-		<img class="immagini-progetto immagini-2" src="roviza_1.JPG">
-		<img class="immagini-progetto immagini-2" src="roviza_6.JPG">
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">I also designed a monochromatic and a less detailed versions of the logo, to be used in print and in small scale use cases.</p>
-		</div>
-		<img class="immagini-progetto immagini-1" src="stf_8.jpg">
-		<img class="immagini-progetto immagini-2" src="stf_7.jpg">
-		<img class="immagini-progetto immagini-2" src="stf_10.jpg">
-		
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">With the new logo also came the new visual identity of the website, for which I designed most of the visual assets.</p>
-		</div>
-
 	</div>
 
 	<div id="footer">
-			<a href="/projects/Damnation/" class="previous-next left">
-				<button class="nico-btn-black">previous</button>
-			</a>
-			<a href="/projects/Gincana/" class="previous-next right">
-				<button class="nico-btn-black">next</button>
-			</a>
+		<a href="/projects/Damnation/" class="previousnext-button left">
+			← previous project
+		</a>
+		<a href="/projects/Gincana/" class="previousnext-button right">
+			next project →
+		</a>
 	</div>
-
-
-	<script src="/scrollHeader.js"></script>
 </body>
 </html>
 

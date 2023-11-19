@@ -326,6 +326,14 @@ p {
 	background-color: var(--yellow);
 }
 
+.previousnext-disabled {
+	color: rgb(182, 182, 182);
+	font-family: font-testi;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	display: inline-block;
+}
+
 .left {
 	float: left;
 }

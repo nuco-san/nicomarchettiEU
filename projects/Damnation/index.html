@@ -2,122 +2,130 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/Style-project.css">
-	<link rel="icon" href="/icona.png" type="image/png" sizes="32x32">
-	<meta charset="utf-8">
-	<title>Chi è Chi</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/Style-project.css">
+  <link rel="icon" href="/icona.png" type="image/png" sizes="32x32">
+  <meta charset="utf-8">
+  <title>Amazon's Damnation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/mainMenu.js"></script>
 </head>
+<body id="body">
 
-<body id="body"  style="background-color: #8fabc0;">
-	<div id="head">
-		<div id="head-sx">
-			
-			<div id="head-sx-luna">
-				<a href="/">
-					<img src="/icona_bianca.png" class="back-svg">
-				</a>
-				<p id="disciplina" class="titoletto-sans">{ data visualization }</p>
+	<div id="home-header">
+		<div id="home-header-left">
+			<a class="home-header-link"  href="/" >nicolò marchetti</a>
+		</div>
+		<div id="home-header-right">
+			<a class="home-header-link mobile-disappear" href="/">work</a>
+			<a class="home-header-link mobile-disappear" href="/illustration/">illustration</a>
+			<a class="home-header-link mobile-disappear" href="/career/">about</a>
+			<img src="/Burger_1.png" onclick="openCloseMenu()" class="burger-icon mobile-appear">
+		</div>
+	</div>
+
+	<div id="mobile-main-menu">
+		<div id="mobile-menu-entries-container">
+			<a href="/" class="mobile-menu-link">work</a>
+			<a class="mobile-menu-link" href="/illustration/">illustration</a>
+			<a class="mobile-menu-link" href="/career/">about</a>
+		</div>
+		<img src="/Burger_2.png"  onclick="openCloseMenu()" class="menu-close-icon mobile-appear">
+	</div>
+
+	<div id="head-image-container">
+		<img id="head-image" src="lalettura.jpg">
+	</div>
+
+	<div id="main-content">
+		<div id="main-text-container">
+			<div class="main-text-column">
+				<p id="main-project-title">
+					Amazon's Damnation
+					<br>-
+				</p>
+				<p class="project-text-medium">
+					An interactive narrative experience <br>about the sculptor's life and opus.
+				</p>
 			</div>
-				
-			<p id="titolo-progetto" class="testo-gigante">Amazon's<br>(dam)nation</p>
-			
-		</div>
-		
-		<div id="head-dx"> 
-		
-			<img class="immagine-titolo" src="damnation_logo.png">
-		
-		</div>
-			
-		<div id="head-sotto">
-			
-			<div id="head-sotto-sx">
-				<div id="head-sotto-sx-testo">
-					<p class="testo-serif-piccolo">
-						These three data visualization research websites were created for the semester-long final course
-						during my M.Sc. Degree in Communication Design at Politecnico di Milano. 
-
+			<div class="main-text-column">
+				<div id="long-text-container">
+					<p class="project-long-text">
+						A collaborative video game for teams of middle school students, 
+						Missione Pietrarubbia was designed to be the
+						main experience for the SmART schooling project of the 
+						<a href="https://www.fondazionearnaldopomodoro.it/en/event/smartschooling/" target="_blank" class="external-link">Arnaldo Pomodoro Foundation</a>.
+						
 						<br><br>
-						<a href="https://densitydesign.github.io/teaching-dd14/es01/group07/" target="_blank" class="pistachio-onwhite">The first one</a>
-						(desktop only) called Troubled Waters, we visualized water-related conflicts data collected from official sources.
-
-						<br><br>
-						<a href="https://densitydesign.github.io/teaching-dd14/es02/group07/question01" target="_blank" class="pistachio-onwhite">The second one</a>, 
-						we mapped a controversial issue by collecting and analyzing online data related to the construction of dams on the web, using 
-						<a href="https://mitpress.mit.edu/books/digital-methods" target="_blank" class="pistachio-onwhite">Digital Methods</a>.
+						The students explore three fictional, psychedelic, sci-fi worlds 
+						inspired by the works and the life of Italian sculptor Arnaldo Pomodoro, 
+						trying to unlock objects that come from the personal archive of the artist.
+						The game was designed to be played in classrooms during the COVID-19 pandemic.
+					</p>
+					<p class="project-whatidid-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.<br><br>A project by We Are Müesli.
 					</p>
 				</div>
 			</div>
-			
-			<div id="head-sotto-dx">
-				<div id="head-sotto-dx-team" style="background-color: #7b99af;">
-					<p class="testo-sans-title">▶ What I did</p>
-					<p class="testo-sans">
-						I took care of the research, the analysis and the visualization of the data.
-						<br><br>My project teammates were <a href="https://phephra.com/" target="_blank" class="pistachio-onwhite">Alessandro Ferrari</a> and Alessandra Facchin.
+		</div>
+		<div id="main-images">
+			<div class="image-layout-0">
+				<img class="all-images" src="UI_set_pietrarubbia.png">
+			</div>
+			<div class="image-layout-1">
+				<img class="all-images" src="screenshot_4_pietrarubbia.jpg">
+				<div class="text-afterimage-container">
+					<p class="project-smalltitle">
+						Section title
+						<br>-
+					</p>
+					<p class="project-long-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.<br><br>A project by We Are Müesli.
 					</p>
 				</div>
-				<div id="head-sotto-dx-year">
-					<p class="testo-sans">Designed in 2019.</p>
+			</div>
+			<div class="image-layout-0">
+				<img class="all-images" src="screenshot_16_pietrarubbia.jpg">
+			</div>
+			<div class="text-layout-0">
+				<p class="project-smalltitle">
+					Section title
+					<br>-
+				</p>
+				<p class="project-long-text">
+					I was in charge of the design of the levels (both experiential and visual), 
+					and the UX/UI design for the game interface.
+				</p>
+			</div>
+			<div class="image-layout-2">
+				<img class="all-images" src="PIETRARUBBIA_Mockup_carte.jpg">
+				<div class="text-afterimage-container">
+					<p class="project-smalltitle">
+						Section title
+						<br>-
+					</p>
+					<p class="project-long-text">
+						I was in charge of the design of the levels (both experiential and visual), 
+						and the UX/UI design for the game interface.
+					</p>
 				</div>
 			</div>
-		</div>	
-	</div>
-	
-	<div id="contenitore-immagini">
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">Scroll down to see the project</p>
-		</div>
-
-		<img class="immagini-progetto immagini-1" src="Fase_1_1.jpg">
-		<img class="immagini-progetto immagini-1" src="Fase_1_4.jpg">
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">A graph that represents the Facebook network created around the main actors 
-				concerned in the Belo Monte dam construction and operation.
-			</p>
-		</div>
-		
-		<img class="immagini-progetto immagini-1" src="Mockup_giornale.jpg">
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">Another graph that shows the online discussion and buzz around the most
-				controversial dams in modern history.
-			</p>
-		</div>
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">For <a href="https://densitydesign.github.io/teaching-dd14/es03/group07" target="_blank" class="pistachio-onwhite">the third website</a> we created, called The Great Amazonian Barrage, 
-				we repurposed our research for public engagement and used data
-				visualisation as a tool to take a stand on the controversial issue of Belo Monte dam in Brazil. 
-				The output is a design tactic  that is meant to expose an issue, provoke a dialogue, construct a public around it.
-			</p>
-		</div>
-
-
-		<iframe class="video" src="https://densitydesign.github.io/teaching-dd14/es03/group07/" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-
-
-		<div class="testo-tra-immagini">
-			<p class="testo-serif-piccolo">All the data visualizations have been created with <a href="https://rawgraphs.io/" target="_blank" class="pistachio-onwhite">Rawgraphs.io</a>
-				and then polished with Adobe Illustrator.
-			</p>
+			<div class="image-layout-0">
+				<img class="all-images" src="foto-pietra.jpg">
+			</div>
+			
 		</div>
 	</div>
-	
+
 	<div id="footer">
-		<a href="/projects/Chiechi/" class="previous-next left">
-			<button class="nico-btn-black">previous</button>
+		<a href="/projects/Chiechi/" class="previousnext-button left">
+			← previous project
 		</a>
-		<a href="/projects/Roviza/" class="previous-next right">
-			<button class="nico-btn-black">next</button>
+		<a href="/projects/Roviza/" class="previousnext-button right">
+			next project →
 		</a>
 	</div>
-
-  <script src="/scrollHeader.js"></script>
 </body>
 </html>
-
 
