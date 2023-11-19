@@ -446,12 +446,21 @@ p {
 	line-height: 1.9rem;
 }
 
-.career-text-big {
+.career-button {
 	font-family: font-testi;
 	font-size: 2.1rem;
 	line-height: 2.6rem;
 	margin: 0 0 1rem 0;
+	background-color: white;
+	border-style: solid;
+	cursor: pointer;
 }
+
+.career-button:hover {
+	background-color: var(--yellow);
+}
+
+
 
 
 
