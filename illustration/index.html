@@ -10,6 +10,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script src="/mainMenu.js"></script>
+	<script src="/imagesloaded.pkgd.min.js"></script>
+	<script src="/masonry.pkgd.min.js"></script>
 
 </head>
 
@@ -46,7 +48,7 @@
 		</p>
 	</div>
 
-	<div id="illustration-body">
+	<!-- <div id="illustration-body">
 	
 		<div class="illustration-image" style="background-image: url(01_PERSONAGGI_VISUAL_SILVA.png)">
 		</div>
@@ -118,6 +120,24 @@
 		</div>
 		<div class="illustration-image" style="background-image: url(pagina2.png)">
 		</div>
+	</div> -->
+
+	<div class="masonry-grid">
+		<div class="masonry-grid-item">
+			<img class="masonry-img" src="01_PERSONAGGI_VISUAL_SILVA.png">
+		</div>
+		<div class="masonry-grid-item">
+			<img class="masonry-img" src="Bookmarks_for_choosing_8.png">
+		</div>
+		<div class="masonry-grid-item">
+			<img class="masonry-img" src="dito_nero.jpg">
+		</div>
+		<div class="masonry-grid-item">
+			<img class="masonry-img" src="Madeleines_06_s.jpg">
+		</div>
+		<div class="masonry-grid-item grid-item-2">
+			<img class="masonry-img" src="erowid_2.jpg">
+		</div>
 	</div>
 
 	<div id="footer">
@@ -134,5 +154,20 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	var $grid = $('.masonry-grid').masonry({
+		// options
+		itemSelector: '.masonry-grid-item',
+		columnWidth: '.masonry-grid-item',
+		gutter: 20,
+		percentPosition: true
+	});
+
+	// layout Masonry after each image loads
+	$grid.imagesLoaded().progress( function() {
+		$grid.masonry('layout');
+	});
+</script>
 
 </html>

@@ -35,6 +35,13 @@
 
 /* ___________GENERAL */
 
+html {
+	box-sizing: border-box;
+  }
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
 :root {
 	--yellow: rgb(238, 249, 135);
 	--gold: rgb(201, 137, 18);
@@ -503,8 +510,22 @@ p {
 	font-size: 3.5rem;
 }
 
+.masonry-grid {
+	padding: 0 2rem;
+}
 
+.masonry-grid-item {
+	width: 23%;
+	cursor: zoom-in;
+}
 
+.grid-item-2 {
+	width: 46%;
+}
+
+.masonry-img {
+	width: 100%;
+}
 
 
 
