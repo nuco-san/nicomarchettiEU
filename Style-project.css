@@ -232,6 +232,8 @@ p {
 
 #main-content {
 	padding: 0rem 6rem;
+	max-width: 1500px;
+	margin: auto;
 }
 
 .main-text-column {
