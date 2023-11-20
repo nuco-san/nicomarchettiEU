@@ -38,6 +38,11 @@
 		<img src="/Burger_2.png"  onclick="openCloseMenu()" class="menu-close-icon mobile-appear">
 	</div>
 
+	<div id="focus-container" onclick="openCloseFocus()">
+		<img id="focus-image" src="01_PERSONAGGI_VISUAL_SILVA.png">
+		<img id="focus-close-icon" src="/Burger_2_white.png"  onclick="openCloseFocus()">
+	</div>
+
 	<div id="illustration-header">
 		<p class="illustration-title">
 			Illustration
@@ -48,95 +53,36 @@
 		</p>
 	</div>
 
-	<!-- <div id="illustration-body">
-	
-		<div class="illustration-image" style="background-image: url(01_PERSONAGGI_VISUAL_SILVA.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(02_PERSONAGGI_VISUAL_ALUIGI.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(03_PERSONAGGI_VISUAL_DORA.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(04_PERSONAGGI_VISUAL_OLIVER.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(24L_02.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(24L_03.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(blue_small.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(blue_small_2.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(blue_small_3.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookcovers_inApp_Ludmilla-02.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookcovers_inApp_Ludmilla-04.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookcovers_inApp_Ludmilla-05.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookcovers_inApp_Ludmilla-07.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookcovers_inApp_Ludmilla-09.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookmarks_for_choosing_3.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookmarks_for_choosing_5.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookmarks_for_choosing_8.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Bookmarks_for_choosing_28.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(erowid_2.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(erowid_5.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(erowid_9.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Madeleines_02_s.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Madeleines_03_s.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(Madeleines_06_s.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_1.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_2.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_3.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_4.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_5.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(wiw_6.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(testaEXP.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(dito_nero.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(goffredo.jpg)">
-		</div>
-		<div class="illustration-image" style="background-image: url(pagina1.png)">
-		</div>
-		<div class="illustration-image" style="background-image: url(pagina2.png)">
-		</div>
-	</div> -->
-
 	<div class="masonry-grid">
 		<div class="masonry-grid-item">
-			<img class="masonry-img" src="01_PERSONAGGI_VISUAL_SILVA.png">
+			<img class="masonry-img" src="01_PERSONAGGI_VISUAL_SILVA.png" onclick="openCloseFocus('01_PERSONAGGI_VISUAL_SILVA.png')">
+			<p class="career-text">
+				Silva - Ghost 'n Found
+			</p>
 		</div>
 		<div class="masonry-grid-item">
-			<img class="masonry-img" src="Bookmarks_for_choosing_8.png">
+			<img class="masonry-img" src="Bookmarks_for_choosing_8.png"  onclick="openCloseFocus('Bookmarks_for_choosing_8.png')">
+			<p class="career-text">
+				Silva - Ghost 'n Found
+			</p>
 		</div>
 		<div class="masonry-grid-item">
 			<img class="masonry-img" src="dito_nero.jpg">
+			<p class="career-text">
+				Silva - Ghost 'n Found
+			</p>
 		</div>
 		<div class="masonry-grid-item">
 			<img class="masonry-img" src="Madeleines_06_s.jpg">
+			<p class="career-text">
+				Silva - Ghost 'n Found
+			</p>
 		</div>
 		<div class="masonry-grid-item grid-item-2">
 			<img class="masonry-img" src="erowid_2.jpg">
+			<p class="career-text">
+				Silva - Ghost 'n Found
+			</p>
 		</div>
 	</div>
 
@@ -168,6 +114,28 @@
 	$grid.imagesLoaded().progress( function() {
 		$grid.masonry('layout');
 	});
+
+
+	document.getElementByClassName("demo").addEventListener("click", myFunction);
+
+	var focusActivated = false;
+	function openCloseFocus(img_source) {
+		if(focusActivated == false){
+			focusActivated = true;
+			document.getElementById("focus-container").style.display = "block";
+			document.getElementById("focus-container").classList.add("focus-shown");
+			document.getElementById("focus-container").classList.remove("focus-hidden");
+			document.body.style.overflow= "hidden";
+			document.getElementById("focus-image").src = img_source;
+		}
+		else {
+			focusActivated = false;
+			document.getElementById("focus-container").classList.remove("focus-shown");
+			document.getElementById("focus-container").classList.add("focus-hidden");
+			document.body.style.overflow= "auto";
+		}
+	}
+	
 </script>
 
 </html>
