@@ -507,6 +507,7 @@ p {
 .illustration-title {
 	font-family: font-titolo;
 	font-size: 3.5rem;
+	margin-bottom: 2rem;
 }
 
 .masonry-grid {
@@ -668,8 +669,14 @@ p {
 	}
 
 	.nico-descrizione {
-		font-size: 2rem;
-		line-height: 2.7rem;
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+	}
+
+
+	.nico-descrizione-small {
+		font-size: 1.2rem;
+		line-height: 1.7rem;
 	}
 
 	#home-sopra {
@@ -733,5 +740,24 @@ p {
 
 	.illustration-image {
 		height: 400px;
+	}
+
+
+	#illustration-header {
+		padding: 8rem 1rem 2rem 1rem;
+		width: 100%;
+	}
+
+	.masonry-grid-item {
+		width: 90%;
+	}
+	
+	.grid-item-2 {
+		width:90%;
+	}
+	.masonry-grid {
+		padding: 0 1rem;
+		width: 100%;
+		box-sizing: border-box;
 	}
 }
