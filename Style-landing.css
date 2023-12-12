@@ -260,7 +260,7 @@ p {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	column-gap: 20px;
-	row-gap: 50px;
+	row-gap: 30px;
 }
 
 .link-home {
