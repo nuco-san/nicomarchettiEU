@@ -288,7 +288,7 @@ video {
 }
 
 #main-images {
-	padding: 2rem 0rem;
+	padding: 2rem 0rem 0rem 0rem;
 }
 
 .all-images {
@@ -433,6 +433,27 @@ video {
 	.text-layout-0 {
 		width: 100%;
 	}
+
+	.image-layout-1 {
+		grid-template-columns:  auto auto;
+	}
+	
+	.image-layout-2 {
+		grid-template-columns: auto auto;
+	}
+
+	#long-text-container {
+		width: 95%;
+	}
+
+	.text-afterimage-container {
+		width: 95%;
+	}
+
+	#footer {
+		padding: 0rem 1rem 3rem 1rem;
+	}
+
 }
 
 
@@ -445,6 +466,14 @@ video {
 	.mobile-disappear {
 		display: none;
 	}
+
+	#main-project-title {
+		font-size: 3rem;
+		line-height: 3.5rem;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+	}
+
 
 	#main-content {
 		padding: 1rem ;
@@ -475,6 +504,7 @@ video {
 	}
 
 	.text-afterimage-container {
+		width: 95%;
 		padding-top: 1rem;
 	}
 
