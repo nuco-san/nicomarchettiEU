@@ -601,7 +601,7 @@ p {
 .facciata-name {
 	font-family: font-descrizione;
 	font-size: 6rem;
-	line-height: 4rem;
+	line-height: 5.6rem;
 	margin: 0 0 2rem 0;
 }
 
@@ -802,4 +802,39 @@ p {
 		width: 100%;
 		box-sizing: border-box;
 	}
+
+
+
+
+
+
+	#facciata-main {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 5rem 2rem;
+	}
+	
+	.facciata-img {
+		width: 5rem;
+		image-rendering: crisp-edges;
+		image-rendering: pixelated;
+		margin-bottom: 2rem;
+	}
+	
+	.facciata-name {
+		font-family: font-descrizione;
+		font-size: 4rem;
+		line-height: 3.8rem;
+		margin: 0 0 2rem 0;
+	}
+	
+	.facciata-working {
+		font-family: font-testi;
+		font-size: 1.35rem;
+		line-height: 1.5rem;
+		margin: 0.5rem 0 1.5rem 0;
+	}
+	
 }
