@@ -512,11 +512,17 @@ p {
 
 .masonry-grid {
 	padding: 0 2rem;
+	opacity: 0;
 }
 
 .masonry-grid-item {
 	width: 300px;
 	cursor: zoom-in;
+}
+
+.grid-visible {
+	opacity: 1;
+	transition: 0.5s;
 }
 
 .grid-item-2 {
@@ -802,6 +808,8 @@ p {
 		width: 100%;
 		box-sizing: border-box;
 	}
+
+
 
 
 

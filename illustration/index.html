@@ -54,7 +54,7 @@
 		</p>
 	</div>
 
-	<div class="masonry-grid">
+	<div class="masonry-grid grid-hidden">
 		<div class="masonry-grid-item">
 			<img class="masonry-img" src="Bookcovers_inApp_Ludmilla-02.png" onclick="openCloseFocus('Bookcovers_inApp_Ludmilla-02.png')">
 			<p class="caption-text">
@@ -265,6 +265,10 @@
 	$grid.imagesLoaded().progress( function() {
 		$grid.masonry('layout');
 	});
+
+	window.onload = (event) => {
+		document.querySelector(".masonry-grid").classList.add("grid-visible");
+	};
 
 	var focusActivated = false;
 	function openCloseFocus(img_source) {
