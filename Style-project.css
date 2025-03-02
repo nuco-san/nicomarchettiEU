@@ -295,12 +295,19 @@ video {
 	width: 100%
 }
 
+
 .video {
 	width:80%;
 	height: 764px;
 	margin-bottom: 2rem;
 	border-radius: 10px;
 }
+
+.project-video {
+	max-width: 100%;	
+	clip-path: inset(2px 2px);
+}
+
 
 .autoplay-video {
 	width: 80%;
