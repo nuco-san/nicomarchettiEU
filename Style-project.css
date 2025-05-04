@@ -427,6 +427,17 @@ video {
 
 
 
+.loadin {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: transform 0.6s, opacity 0.9s;
+}
+
+.loadin.loaded {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
 
 
 
@@ -527,10 +538,6 @@ video {
 	.text-afterimage-container {
 		width: 95%;
 	}
-
-	/* 	#footer {
-		display: none;
-	} */
 
 	.previousnext-button {
 		font-size: 1.2rem;
