@@ -270,10 +270,10 @@ p {
 }
 
 .link-home video {
-		clip-path: inset(2px 2px);
+		clip-path: inset(1px 1px);
 }
 
-
+/* 
 @keyframes linkh-home-radius {
 	from {border-radius: 10px;}
   	to {border-radius: 50px;}
@@ -283,20 +283,17 @@ p {
 	from {border-radius: 50px;}
   	to {border-radius: 10px;}
 }
-
+ */
 .link-home-img {
 	width: 100%;
 	box-sizing: border-box;
-	animation-name: linkh-home-no-radius;
-  	animation-duration: 0.2s;
+  	transition: 0.2s;
 	border-radius: 0px;
-	border-radius: 10px;
+	border-radius: 14px;
 	aspect-ratio: 1.82;
 }
 
 .link-home-img:hover {
-	animation-name: linkh-home-radius;
-  	animation-duration: 0.2s;
 	border-radius: 50px;
 }
 
