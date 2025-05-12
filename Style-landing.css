@@ -269,6 +269,10 @@ p {
 	overflow: hidden;
 }
 
+.link-home video {
+		clip-path: inset(2px 2px);
+}
+
 
 @keyframes linkh-home-radius {
 	from {border-radius: 10px;}
@@ -287,6 +291,7 @@ p {
   	animation-duration: 0.2s;
 	border-radius: 0px;
 	border-radius: 10px;
+	aspect-ratio: 1.82;
 }
 
 .link-home-img:hover {
