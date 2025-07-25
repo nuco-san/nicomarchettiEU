@@ -463,13 +463,21 @@ p {
 }
 
 .career-button {
+	border-color: black;
+	padding: 0.4rem;
+	color: black;
+	margin-top: 1rem!important;
 	font-family: font-testi;
-	font-size: 2.1rem;
-	line-height: 2.6rem;
+	font-size: 1.6rem;
+	line-height: 2rem;
 	margin: 0 0 1rem 0;
 	background-color: white;
 	border-style: solid;
 	cursor: pointer;
+}
+
+.career-button:has(a) {
+	margin-top: 2rem;
 }
 
 .career-button:hover {
