@@ -25,7 +25,7 @@
 
 @font-face {
 	font-family: font-mono;
-	src: url(/fonts/IBMPlexMono-Light.otf);
+	src: url(/fonts/IBMPlexMono-Regular.ttf);
 }
 
 
@@ -37,6 +37,10 @@
 
 
 /* ___________GENERAL */
+
+* {
+	box-sizing: border-box;
+}
 
 :root {
 	--yellow: rgb(238, 249, 135);
@@ -71,7 +75,7 @@ video {
 
 #home-header {
 	box-sizing: border-box;
-	padding: 1rem 2rem;
+	padding: 1rem 18%;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -92,8 +96,8 @@ video {
 
 .home-header-link {
 	font-family: font-titoletti;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
 	color: black;
 }
 
@@ -231,11 +235,13 @@ video {
 
 #head-image-container {
 	width: 100%;
-	margin-top: 3rem;
+	margin-top: 5rem;
+	padding: 0rem 18%;
 }
 
 #head-image {
 	width: 100%;
+	border-radius: 10px;
 }
 
 #main-text-container {
@@ -245,9 +251,7 @@ video {
 }
 
 #main-content {
-	padding: 0rem 6rem;
-	max-width: 1500px;
-	margin: auto;
+	padding: 0rem 18%;
 }
 
 .main-text-column {
@@ -289,35 +293,38 @@ video {
 
 #main-project-title {
 	font-family: font-titolo;
-	font-size: 3.5rem;
-	line-height: 4rem;
+	font-size: 3rem;
+	line-height: 3.5rem;
 	margin-top: 0rem;
 }
 
 .project-smalltitle {
 	font-family: font-titolo;
-	font-size: 2rem;
-	line-height: 2.5rem;
+	font-size: 1.7rem;
+	line-height: 2.2rem;
 	margin-bottom: 0.5rem;
 	margin-top: 0rem;
 }
 
 .project-text-medium {
 	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
 }
 
 .project-long-text {
 	font-family: font-testi;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
 }
 
 .project-whatidid-text {
 	font-family: font-mono;
-	font-size: 0.9rem;
-	line-height: 1.3rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: #f1f1f1;
 }
 
 #main-images {
@@ -326,6 +333,8 @@ video {
 
 .all-images {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	border-radius: 10px;
 }
 
@@ -369,8 +378,8 @@ video {
 .previousnext-button {
 	color: black;
 	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
 	display: inline-block;
 }
 
@@ -381,8 +390,8 @@ video {
 .previousnext-disabled {
 	color: rgb(182, 182, 182);
 	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
 	display: inline-block;
 }
 
@@ -419,13 +428,20 @@ video {
 
 .image-layout-2 {
 	display: grid;
-	grid-template-columns: 70% auto;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	margin-bottom: 2rem;
+}
+
+.image-layout-3 {
+	display: grid;
+	grid-template-columns: 65fr 35fr;
 	column-gap: 20px;
 	margin-bottom: 2rem;
 }
 
 #footer {
-	padding: 2rem 6rem 6rem;
+	padding: 2rem 18% 6rem;
 	overflow: auto;
 }
 
@@ -442,11 +458,6 @@ video {
 	width: 100%;
 	height: 100%;
 }
-
-.text-afterimage-container {
-	width: 80%;
-}
-
 
 
 .loadin {
@@ -473,6 +484,18 @@ video {
 	#main-content {
 		padding: 0rem 3rem;
 	}
+
+	#head-image-container {
+		padding: 0rem 3rem;
+	}
+	#footer {
+		padding: 2rem 3rem 6rem;
+	}
+
+	#home-header {
+		padding: 1rem 3rem;
+	}
+	
 }
 
 
@@ -480,6 +503,10 @@ video {
 
 	#main-content {
 		padding: 1rem;
+	}
+
+	#head-image-container {
+		padding: 0rem 1rem;
 	}
 
 	.text-layout-0 {
@@ -508,6 +535,10 @@ video {
 
 	#home-header {
 		padding: 1rem;
+	}
+
+	#main-text-container {
+		padding: 2rem 0rem 3rem 0rem;
 	}
 
 
@@ -558,8 +589,8 @@ video {
 
 	.image-layout-2 {
 		display: flex;
-		flex-direction: column-reverse;
-		gap: 2rem;
+		gap: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.text-afterimage-container {

@@ -37,7 +37,9 @@
 
 html {
 	box-sizing: border-box;
-  }
+	scroll-behavior: smooth;
+/* 	background-color: #f6f5f1;
+ */  }
 *, *:before, *:after {
 box-sizing: inherit;
 }
@@ -83,7 +85,7 @@ p {
 /* ___________HEADER & MENU */
 
 #home-header {
-	padding: 1rem 2rem;
+	padding: 1rem 18%;
 	width: 100%;
 	position: fixed;
 	top:0;
@@ -105,8 +107,8 @@ p {
 .home-header-link {
 	box-sizing: border-box;
 	font-family: font-titoletti;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
 	color: black;
 	vertical-align: center;
 }
@@ -237,11 +239,11 @@ p {
 /* ___________HOME */
 
 #home-sopra {
-	padding: 8rem 2rem 2rem 2rem;
+	padding: 8rem 18% 2rem 18%;
 }
 
 #home-sopra-sx {
-	width: 40%;
+	width: 60%;
 	text-align: left;
 	display: inline-block;
 	margin-bottom: 1rem;
@@ -254,13 +256,13 @@ p {
 }
 
 #home-sotto {
-	padding: 2rem;
+	padding: 0 18% 10rem 18%;
 	text-align: left;
 	vertical-align: top;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 	column-gap: 20px;
-	row-gap: 30px;
+	row-gap: 50px;
 }
 
 .link-home {
@@ -350,15 +352,15 @@ p {
 
 .link-home-text {
 	font-family: font-titoletti;
-	font-size: 1.7rem;
-	line-height: 1.9rem;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
 	margin: 1rem 0 0.2rem 0;
 }
 
 .link-home-genre {
 	font-family: font-testi;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
 	margin-top: 0;
 	color: var(--gold);
 }
@@ -652,13 +654,33 @@ p {
 
 .me-reel-container {
 	width: 100%;
-	padding: 0 2rem 2rem 2rem;
+	padding: 0 18% 2rem 18%;
 }
 
 .reel-video {
 	width: 100%;
 	border-radius: 10px;
 }
+
+
+
+.work-section-header-container {
+	padding: 7rem 18% 2rem 18%;
+}
+
+
+.work-section-header {
+	width: 60%;
+}
+
+.section-title {
+	font-family: font-testi;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+
 
 
 
