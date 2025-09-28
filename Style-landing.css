@@ -433,8 +433,8 @@ p {
 
 .career-title {
 	font-family: font-testi;
-	font-size: 3rem;
-	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
 	line-height: 3rem;
 }
 
@@ -455,13 +455,13 @@ p {
 }
 
 .career-text-section {
-	width: 80%;
+	width: 90%;
 	margin-bottom: 3rem;
 }
 
 .career-about-me {
 	width: 100%;
-	padding: 8rem 2rem 8rem 2rem;
+	padding: 8rem 18%;
 }
 
 .titolo-career {
@@ -474,30 +474,29 @@ p {
 
 .career-text {
 	font-family: font-testi;
-	font-size: 1.5rem;
-	line-height: 1.9rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 }
 
 .career-button {
-	border-color: black;
-	padding: 0.4rem;
-	color: black;
+	background-color: black;
+	padding: 0.4rem 1rem;
+	color: white;
 	margin-top: 1rem !important;
 	font-family: font-testi;
 	font-size: 1.6rem;
 	line-height: 2rem;
-	margin: 0 0 1rem 0;
-	background-color: white;
 	border-style: solid;
 	cursor: pointer;
+	border-radius: 100rem;
 }
 
 .career-button:has(a) {
-	margin-top: 2rem;
+	margin: 0 2rem;
 }
 
 .career-button:hover {
-	background-color: var(--yellow);
+	color: var(--yellow);
 }
 
 
@@ -743,6 +742,12 @@ p {
 	.illustration-image {
 		height: 300px;
 	}
+
+
+	.career-about-me {
+		padding: 8rem 3rem;
+	}
+
 }
 
 
@@ -769,6 +774,8 @@ p {
 	.career-photo {
 		width: 100%;
 		margin-bottom: 2rem;
+		aspect-ratio: 3/2;
+		object-fit: cover;
 	}
 
 	.career-aboutme-text-container {
