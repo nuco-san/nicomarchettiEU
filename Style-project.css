@@ -248,6 +248,7 @@ video {
 	padding: 2rem 0rem 6rem 0rem;
 	grid-template-columns: 50% auto;
 	display: grid;
+	gap: 1rem;
 }
 
 #main-content {
@@ -319,12 +320,13 @@ video {
 }
 
 .project-whatidid-text {
-	font-family: font-mono;
-	font-size: 1rem;
-	line-height: 1.4rem;
+	font-family: font-testi;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 	padding: 1rem;
 	border-radius: 10px;
-	background-color: #f1f1f1;
+	background-color: black;
+	color: white;
 }
 
 #main-images {
@@ -556,15 +558,15 @@ video {
 	}
 
 	#main-project-title {
-		font-size: 3rem;
-		line-height: 3.5rem;
-		margin-bottom: 1rem;
+		font-size: 2.2rem;
+		line-height: 2.7rem;
+		margin-bottom: 0.5rem;
 		margin-top: 0rem;
 	}
 
 
 	#main-content {
-		padding: 1rem;
+		padding: 5rem 1rem ;
 	}
 
 	#main-text-container {
@@ -606,6 +608,15 @@ video {
 	.previousnext-disabled {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
+	}
+
+	#main-text-left {
+		width: 100%;
+	}
+
+	.project-text-medium {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
 	}
 
 }
