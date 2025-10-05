@@ -246,9 +246,10 @@ video {
 
 #main-text-container {
 	padding: 2rem 0rem 6rem 0rem;
-	grid-template-columns: 50% auto;
+	grid-template-columns: 1fr 1fr;
 	display: grid;
 	gap: 1rem;
+	row-gap: 3rem;
 }
 
 #main-content {
@@ -320,13 +321,23 @@ video {
 }
 
 .project-whatidid-text {
+	font-family: font-mono;
+	font-size: 1.25rem;
+	padding-left: 1.2rem;
+	color: black;
+	border-left: 8px solid var(--yellow);
+}
+
+
+.image-layout-0 > .image-dida {
+	max-width: 50%;
+}
+
+.image-dida {
 	font-family: font-testi;
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-	padding: 1rem;
-	border-radius: 10px;
-	background-color: black;
-	color: white;
+	padding: 1rem ;
+	font-size: 0.9rem;
+	color: #646464;
 }
 
 #main-images {
@@ -531,6 +542,11 @@ video {
 		width: 95%;
 	}
 
+
+	.image-layout-0 > .image-dida {
+		max-width: 100%;
+	}
+
 	#footer {
 		padding: 0rem 1rem 3rem 1rem;
 	}
@@ -617,6 +633,16 @@ video {
 	.project-text-medium {
 		font-size: 1.3rem;
 		line-height: 1.7rem;
+	}
+
+	.image-dida {
+		padding-left: 0;
+	}
+
+	.project-whatidid-text {
+		font-size: 1.1rem;
+		padding-left: 0.8rem;
+		border-left: 6px solid var(--yellow);
 	}
 
 }
