@@ -343,13 +343,21 @@ video {
 }
 
 .section-title {
-	font-family: font-testi;
-	font-size: 1.4rem;
-	line-height: 2rem;
-	text-transform: uppercase;
+	font-family: font-titolo;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
 	width: 100%;
 	text-align: center;
-	padding: 6rem 0 2rem 0;
+	padding: 6rem 0 0rem 0;
+}
+.section-subtitle {
+	font-family: font-testi;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+	color: #646464;
 }
 
 
