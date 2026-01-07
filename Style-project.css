@@ -101,6 +101,8 @@ video {
 	color: black;
 }
 
+
+
 .home-header-link+.home-header-link {
 	margin-left: 2rem;
 }
@@ -339,6 +341,17 @@ video {
 	font-size: 0.9rem;
 	color: #646464;
 }
+
+.section-title {
+	font-family: font-testi;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 6rem 0 2rem 0;
+}
+
 
 #main-images {
 	padding: 2rem 0rem 0rem 0rem;
