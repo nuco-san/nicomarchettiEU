@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="/Style-landing.css">
 	<link rel="icon" href="/icona.png" type="image/png" sizes="32x32">
@@ -9,42 +10,161 @@
 	<title>Nicolò</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/mainMenu.js"></script>
-	<script defer src="/appear.js"></script>
 </head>
 
 <body id="body">
 
-	<div id="facciata-main">
-		<img class="facciata-img" src="icona.png" draggable="false">
-
-		<div id="facciata-desc">
-			<p class="facciata-name">
-				Nicolò Marchetti
-			</p>
-			<p class="nico-descrizione">
-				Visual designer.<br>I design, animate, and code.
-			</p>
-			<p class="facciata-working">
-				Currently working at <a target="_blank" class="external-link" href="https://www.zetalab.com/">
-				Zetalab</a>.
-			</p>
+	<div id="home-header">
+		<div id="home-header-left">
+			<a class="home-header-link" href="">nicolò marchetti</a>
 		</div>
-
-		<div class="facciata-contacts">
-			<p class="nico-descrizione-small">
-				<a class="external-link" target="_blank" href="mailto:nicolo.marchetti@live.com">
-					Mail
-				</a>
-			</p>
-			<p class="nico-descrizione-small">
-				<a class="external-link" target="_blank" href="https://www.linkedin.com/in/nicolò-marchetti">
-					Linkedin
-				</a>
-			</p>
+		<div id="home-header-right">
+			<a class="home-header-link mobile-disappear" href="#worksection">work</a>
+			<a class="home-header-link mobile-disappear" href="/illustration/">illustration</a>
+			<a class="home-header-link mobile-disappear" href="/career/">about</a>
+			<img src="/Burger_1.png" onclick="openCloseMenu()" class="burger-icon mobile-appear">
 		</div>
-		
 	</div>
 
+	<div id="mobile-main-menu">
+		<div id="mobile-menu-entries-container">
+			<a href="/work/" class="mobile-menu-link">work</a>
+			<a class="mobile-menu-link" href="/illustration/">illustration</a>
+			<a class="mobile-menu-link" href="/career/">about</a>
+		</div>
+		<img src="/Burger_2.png" onclick="openCloseMenu()" class="menu-close-icon mobile-appear">
+	</div>
+
+
+
+	<div id="home-sopra">
+		<div id="home-sopra-sx">
+			<p class="nico-descrizione">
+				Hi, I'm Nicolò!<br>I'm a visual designer.
+			</p>
+			<p class="facciata-working">
+				From motion design to interactive web interfaces, I craft impactful digital narratives.
+			</p>
+			<a class="internal-link" href="#worksection">See my projects</a>
+		</div>
+	</div>
+
+	<div class="me-reel-container">
+		<video class="reel-video" playsinline autoplay loop muted>
+			<source src="reel_3_s.mp4" type="video/mp4" />
+		</video>
+	</div>
+
+
+	<div class="work-section-header-container" id="worksection">
+		<div class="work-section-header">
+			<p class="section-title">
+				Selected work
+			</p>
+			<p class="facciata-working">
+				A selection of projects crafted in collaboration with studios, independently as a freelancer, or simply
+				driven by personal curiosity and passion.
+			</p>
+		</div>
+	</div>
+	<div id="home-sotto">
+
+		<div class="link-home">
+			<a href="/projects/Homnia/">
+				<img class="link-home-img" src="/projects/Homnia/homnia-cover.jpg">
+			</a>
+			<p class="link-home-text">Hómnia</p>
+			<p class="link-home-genre">Branding</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/Pianocity/">
+				<video class="link-home-img" muted playsinline autoplay loop
+					src="/projects/Pianocity/Pianocity_thumb_s.mp4"></video>
+			</a>
+			<p class="link-home-text">Piano City Milano 2025</p>
+			<p class="link-home-genre">Motion design</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/Weebora/">
+				<video class="link-home-img" muted playsinline autoplay loop src="/projects/Weebora/Weebora_thumb.mp4"></video>
+			</a>
+			<p class="link-home-text">Weebora</p>
+			<p class="link-home-genre">Motion design, UX/UI</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/TT/">
+				<video class="link-home-img" muted playsinline autoplay loop src="/projects/TT/TT_thumb_2s.mp4"></video>
+			</a>
+			<p class="link-home-text">Transatlantic Transfers</p>
+			<p class="link-home-genre">Web design</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/Pietrarubbia/">
+				<video class="link-home-img" muted playsinline autoplay loop
+					src="/projects/Pietrarubbia/Pietrarubbia_thumb_s.mp4"></video>
+			</a>
+			<p class="link-home-text">Missione Pietrarubbia</p>
+			<p class="link-home-genre">Visual design</p>
+		</div>
+<!-- 
+		<div class="link-home">
+			<a href="/projects/Minibombo/">
+				<video class="link-home-img" muted playsinline autoplay loop
+					src="/projects/Minibombo/Minibombo_thumb_s.mp4"></video>
+			</a>
+			<p class="link-home-text">Minibombo</p>
+			<p class="link-home-genre">Web design</p>
+		</div>
+ -->
+		<div class="link-home">
+			<a href="/projects/Coop/">
+				<img class="link-home-img" src="/projects/Coop/coop-thumb.png">
+			</a>
+			<p class="link-home-text">Co-op</p>
+			<p class="link-home-genre">Visual design</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/ividays/">
+				<img class="link-home-img" src="/projects/ividays/Mockup_2023-cropped.jpg">
+			</a>
+			<p class="link-home-text">IVIPRO Days</p>
+			<p class="link-home-genre">Visual design</p>
+		</div>
+
+		<div class="link-home">
+			<a href="/projects/Chiechi/">
+				<img class="link-home-img" src="/projects/Chiechi/mockup_entrambi.png">
+			</a>
+			<p class="link-home-text">Wer Ist Wer</p>
+			<p class="link-home-genre">Visual design</p>
+		</div>
+
+<!-- 		<div class="link-home">
+			<a href="/projects/Damnation/">
+				<img class="link-home-img" src="/projects/Damnation/Mockup_giornale_coverimage.jpg">
+			</a>
+			<p class="link-home-text">Amazon's (dam)nation</p>
+			<p class="link-home-genre">Data visualization</p>
+		</div> -->
+		<div class="link-home">
+			<a href="/projects/Gincana/">
+				<video class="link-home-img" muted playsinline autoplay loop
+					src="/projects/Gincana/Gincana_thumb_2s.mp4"></video>
+			</a>
+			<p class="link-home-text">Gincana</p>
+			<p class="link-home-genre">Art direction</p>
+		</div>
+
+	</div>
+
+	<div class="me-reel">
+
+	</div>
 </body>
 
 </html>
